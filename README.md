@@ -4,6 +4,13 @@ Read the [Call for Participants](docs/Automated_Negotiation_League_2023.pdf)!
 
 This is a template repository for the Agent Negotiation League (ANL) of [ANAC](https://web.tuat.ac.jp/~katfuji/ANAC2023/index.html) which will be held at AAMAS 2023. 
 
+## How to run this in MacOsX:
+1. Install Rosetta: `softwareupdate --install-rosetta`
+2. Install Dependencies: `arch -x86_64 /usr/bin/python3 -m pip install -r requirements.txt`
+3. Run the project with: `arch -x86_64 /usr/bin/python3 run_tournament.py`
+
+
+
 ## Overview
 - directories:
     - `agents`: Contains directories with the agents. The `template_agent` directory contains the template for this competition.
