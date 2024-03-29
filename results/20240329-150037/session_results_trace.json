@@ -1,0 +1,130 @@
+{
+  "actions": [
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueE": "valueM",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueE": "valueO",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2431133088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9204723541
+        }
+      }
+    },
+    {
+      "Accept": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueE": "valueO",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2431133088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9204723541
+        }
+      }
+    }
+  ],
+  "connections": [
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2"
+  ],
+  "progress": {
+    "ProgressTime": {
+      "duration": 10000,
+      "start": 1711720838106
+    }
+  },
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/Test1"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Test1"
+        }
+      },
+      "profile": "file:domains/domain00/profileA.json"
+    },
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      "profile": "file:domains/domain00/profileB.json"
+    }
+  },
+  "error": null
+}

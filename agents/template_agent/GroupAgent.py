@@ -2,8 +2,8 @@ import json
 import logging
 import os
 from random import randint, random
-from time import time
-from typing import cast, List, Dict
+import time
+from typing import cast, List, Dict, TypedDict
 
 from geniusweb.actions.Accept import Accept
 from geniusweb.actions.Action import Action
@@ -31,8 +31,15 @@ from tudelft_utilities_logging.ReportToLogger import ReportToLogger
 
 from .utils.opponent_model import OpponentModel
 
+class SessionData(TypedDict):
+    progressAtFinish: float
+    utilityAtFinish: float
+    didAccept: bool
+    isGood: bool
+    topBidsPercentage: float
+    forceAcceptAtRemainingTurns: float
 
-class TemplateAgent(DefaultParty):
+class GroupAgent(DefaultParty):
     """
     Template of a Python geniusweb agent.
     """
@@ -49,6 +56,14 @@ class TemplateAgent(DefaultParty):
         self.other: str = None
         self.settings: Settings = None
         self.storage_dir: str = None
+        self.opponent_best_bid: Bid = None
+        self.proposal_time = None
+        self.force_accept_at_remaining_turns_light: int = 2
+        self.force_accept_at_remaining_turns: int = 2
+        self.avg_time = 0.1
+        self.min_util = 0.95
+        self.bids_with_utilities = []
+        self.all_bids = []
 
         self.last_received_bid: Bid = None
         self.opponent_model: OpponentModel = None
@@ -93,6 +108,8 @@ class TemplateAgent(DefaultParty):
             if actor != self.me:
                 # obtain the name of the opponent, cutting of the position ID.
                 self.other = str(actor).rsplit("_", 1)[0]
+                self.attempt_load_data()
+                self.learn_from_past_sessions()
 
                 # process action done by opponent
                 self.opponent_action(action)
@@ -195,7 +212,7 @@ class TemplateAgent(DefaultParty):
         if hasattr(self, 'last_time') and self.last_time is not None:
             self.round_times.append(time() * 1000 - self.last_time)
             self.avg_time = sum(self.round_times[-3:]) / len(self.round_times[-3:])
-        self.last_time = time() * 1000
+        self.last_time = time.time() * 1000
 
 
         if self.accept_condition(self.last_received_bid):

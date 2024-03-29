@@ -1,0 +1,220 @@
+{
+  "actions": [
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueD": "valueG",
+            "issueE": "valueO",
+            "issueB": "valueF",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2768236563,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2237151044
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueD": "valueG",
+            "issueE": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2674129347,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2031790583
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueD": "valueC",
+            "issueE": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.4776512623,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4874554411
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueD": "valueA",
+            "issueE": "valueG",
+            "issueB": "valueG",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.439533541,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2354874476
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueD": "valueH",
+            "issueE": "valueD",
+            "issueB": "valueE",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.832570928,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2711853031
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueD": "valueG",
+            "issueE": "valueE",
+            "issueB": "valueC",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.3814775155,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2724352837
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueD": "valueI",
+            "issueE": "valueN",
+            "issueB": "valueH",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2526164304,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6948812559
+        }
+      }
+    },
+    {
+      "Accept": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueD": "valueI",
+            "issueE": "valueN",
+            "issueB": "valueH",
+            "issueC": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": 0.2526164304,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6948812559
+        }
+      }
+    }
+  ],
+  "connections": [
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1",
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2"
+  ],
+  "progress": {
+    "ProgressTime": {
+      "duration": 10000,
+      "start": 1711721073592
+    }
+  },
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/Test1"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_1": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Test1"
+        }
+      },
+      "profile": "file:domains/domain00/profileA.json"
+    },
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      "profile": "file:domains/domain00/profileB.json"
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,94 @@
+{
+  "actions": [
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_AgentFO2_AgentFO2_AgentFO2_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueA": "valueB",
+            "issueD": "valueH",
+            "issueC": "valueA",
+            "issueB": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_AgentFO2_AgentFO2_AgentFO2_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    }
+  ],
+  "connections": [
+    "agents_ANL2022_AgentFO2_AgentFO2_AgentFO2_1",
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2"
+  ],
+  "progress": {
+    "ProgressTime": {
+      "duration": 10000,
+      "start": 1711720418424
+    }
+  },
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+                  "parameters": {
+                    "storage_dir": "agent_storage/AgentFO2"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {
+    "agents_ANL2022_AgentFO2_AgentFO2_AgentFO2_1": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      "profile": "file:domains/domain00/profileA.json"
+    },
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      "profile": "file:domains/domain00/profileB.json"
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,10 @@
+{
+  "num_offers": 8,
+  "agent_1": "DreamTeam109Agent",
+  "utility_1": 0.2526164304,
+  "agent_2": "DreamTeam109Agent",
+  "utility_2": 0.6948812559,
+  "nash_product": 0.17553842241732695,
+  "social_welfare": 0.9474976863,
+  "result": "agreement"
+}
