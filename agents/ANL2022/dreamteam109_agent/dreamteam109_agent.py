@@ -127,16 +127,14 @@ class DreamTeam109Agent(DefaultParty):
             if actor != self.me:
                 if self.other is None:
                     self.other = actor
-                    # obtain the name of the opponent, cutting of the position ID.
                     self.other_name = str(actor).rsplit("_", 1)[0]
-                    self.attempt_load_data()
+                    self.attempt_load_data()  # 尝试加载历史数据并学习
                     self.learn_from_past_sessions()
 
-                # process action done by opponent
-                self.opponent_action(action)
-        # YourTurn notifies you that it is your turn to act
+                self.opponent_action(action)  # 处理对手行动，更新对手模型
+
         elif isinstance(data, YourTurn):
-            # execute a turn
+            # 执行轮次动作，结合对手模型和历史数据进行决策
             self.my_turn()
 
         # Finished will be send if the negotiation has ended (through agreement or deadline)
@@ -429,8 +427,27 @@ class DreamTeam109Agent(DefaultParty):
         self.bids_with_utilities.sort(key=lambda x: x[1], reverse=True)
 
     def random_explore(self):
-        """随机探索报价空间，选择一个报价。"""
+        """随机探索报价空间，选择一个报价，但确保其效用值不低于设定的底线效用值(reservation bid utility)。"""
+        # 设置底线效用值
+        reservation_bid_utility = 0.8
+
+        # 确保bids_with_utilities已经按效用值降序排序
+        self.bids_with_utilities.sort(key=lambda x: x[1], reverse=True)
+
+        # 随机选择一个报价的索引
         index = randint(0, len(self.bids_with_utilities) - 1)
+        chosen_bid_utility = self.bids_with_utilities[index][1]
+
+        # 如果选中的报价效用值小于底线效用值，则寻找第一个大于等于底线效用值的报价
+        if chosen_bid_utility < reservation_bid_utility:
+            for bid, utility in self.bids_with_utilities:
+                if utility >= reservation_bid_utility:
+                    self.logger.log(logging.INFO,
+                                    "Chosen bid utility was below the reservation utility. A higher utility bid has been selected.")
+                    return bid
+            # 如果所有报价的效用值都低于底线效用值，则选择原始随机报价（虽然这种情况不太可能发生，因为底线效用值设置得相对保守）
+            self.logger.log(logging.INFO,
+                            "No bids with utility above or equal to the reservation utility were found. Returning the randomly selected bid.")
         return self.bids_with_utilities[index][0]
 
     def choose_high_utility_bid(self, progress):
