@@ -1,0 +1,56 @@
+{
+  "actions": [],
+  "connections": [],
+  "progress": null,
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agent.ANL2022.agent007.agent007.Agent007",
+                  "parameters": {
+                    "storage_dir": "agent_storage/Test1"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agent.ANL2022.agent4410.agent_4410.Agent4410",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {},
+  "error": {
+    "message": "None:Failed to start up session",
+    "stackTrace": [],
+    "cause": {
+      "message": "('Failed to create connection to party agent.ANL2022.agent007.agent007.Agent007', ModuleNotFoundError(\"No module named 'agent'\"))",
+      "stackTrace": [],
+      "cause": null
+    }
+  }
+}

@@ -37,6 +37,7 @@ from .utils.logger import Logger
 
 from .utils.opponent_model import OpponentModel
 from .utils.utils import bid_to_string
+from geniusweb.opponentmodel.FrequencyOpponentModel import FrequencyOpponentModel
 
 class SessionData(TypedDict):
     progressAtFinish: float
@@ -199,12 +200,14 @@ class DreamTeam109Agent(DefaultParty):
         if isinstance(action, Offer):
             # create opponent model if it was not yet initialised
             if self.opponent_model is None:
-                self.opponent_model = OpponentModel(self.domain, self.logger)
+                # self.opponent_model = OpponentModel(self.domain, self.logger)
+                self.opponent_model = FrequencyOpponentModel.With(self, self.domain, self.profile.getReservationBid())
 
             bid = cast(Offer, action).getBid()
 
             # update opponent model with bid
-            self.opponent_model.update(bid)
+            # self.opponent_model.update(bid)
+            self.opponent_model.WithAction(action, self.progress)
             # set bid as last received
             self.last_received_bid = bid
 
@@ -468,7 +471,8 @@ class DreamTeam109Agent(DefaultParty):
 
         # Adjust score based on opponent model, if available
         if self.opponent_model is not None:
-            opponent_utility = self.opponent_model.get_predicted_utility(bid)
+            # opponent_utility = self.opponent_model.get_predicted_utility(bid)
+            opponent_utility = self.opponent_model.getUtility(bid)
             opponent_score = (1.0 - dynamic_alpha * time_pressure) * opponent_utility
             score += opponent_score
 

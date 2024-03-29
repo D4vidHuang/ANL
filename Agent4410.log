@@ -1,0 +1,10 @@
+2024-03-29 15:15:47,593 - Agent4410 - WARNING - Init took: 0.10459637641906738 secs
+2024-03-29 15:15:47,593 - Agent4410 - WARNING - 
+2024-03-29 15:15:51,077 - Agent4410 - INFO - Changing state to exploit!
+2024-03-29 15:15:54,172 - Agent4410 - INFO - Accepting offer with utility: 0.2366195190
+2024-03-29 15:15:54,178 - Agent4410 - INFO - party is terminating:
+2024-03-29 15:22:02,777 - Agent4410 - WARNING - Init took: 0.1038980484008789 secs
+2024-03-29 15:22:02,777 - Agent4410 - WARNING - 
+2024-03-29 15:22:06,001 - Agent4410 - INFO - Changing state to exploit!
+2024-03-29 15:22:10,303 - Agent4410 - INFO - Accepting offer with utility: 0.3767834864
+2024-03-29 15:22:10,304 - Agent4410 - INFO - party is terminating:

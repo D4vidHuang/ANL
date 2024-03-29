@@ -1,0 +1,10 @@
+{
+  "num_offers": 3,
+  "agent_1": "StupidAgent",
+  "utility_1": 0.8183732284,
+  "agent_2": "DreamTeam109Agent",
+  "utility_2": 0.4901098624,
+  "nash_product": 0.4010927903629678,
+  "social_welfare": 1.3084830908,
+  "result": "agreement"
+}
