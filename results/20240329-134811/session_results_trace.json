@@ -1,0 +1,56 @@
+{
+  "actions": [],
+  "connections": [],
+  "progress": null,
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.template_agent.template_agent.GroupAgent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/GroupAgent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {},
+  "error": {
+    "message": "None:Failed to start up session",
+    "stackTrace": [],
+    "cause": {
+      "message": "('Failed to create connection to party agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent', OSError(\"dlopen(/Users/yongcheng/Library/Python/3.9/lib/python/site-packages/lightgbm/lib_lightgbm.so, 0x0006): Library not loaded: /usr/local/opt/libomp/lib/libomp.dylib\\n  Referenced from: <FB7AB1B4-24FD-362B-99F0-01E20F36C929> /Users/yongcheng/Library/Python/3.9/lib/python/site-packages/lightgbm/lib_lightgbm.so\\n  Reason: tried: '/usr/local/opt/libomp/lib/libomp.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/libomp/lib/libomp.dylib' (no such file), '/usr/local/opt/libomp/lib/libomp.dylib' (no such file), '/usr/local/lib/libomp.dylib' (no such file), '/usr/lib/libomp.dylib' (no such file, not in dyld cache)\"))",
+      "stackTrace": [],
+      "cause": null
+    }
+  }
+}
