@@ -482,7 +482,7 @@ class DreamTeam109Agent(DefaultParty):
             # 谈判前半段随机探索
             return self.random_explore()
         elif progress < 0.95:
-            print("Progress 2")
+            #print("Progress 2")
             try:
                 return self.intp_method()
             except Exception as e:
@@ -514,7 +514,7 @@ class DreamTeam109Agent(DefaultParty):
 
         
     def intp_method(self):
-        print("INTP Method is used.")
+        #print("INTP Method is used.")
         labels, centers = self.k_means(self.all_bids_list)
         bid_0, bid_1 = self.find_bid_match_centres(self.all_bids_list, labels, centers)
         bid_l = bid_0 if self.profile.getUtility(bid_0) < self.profile.getUtility(bid_1) else bid_1
@@ -522,7 +522,7 @@ class DreamTeam109Agent(DefaultParty):
         #self.logger.log(logging.INFO, str(bid_l) + " " + str(self.profile.getUtility(bid_l)))
         #self.logger.log(logging.INFO, str(bid_r) + " " + str(self.profile.getUtility(bid_r)))
         cur_ratio = self.get_ratio()
-        print("Ratio")
+        #print("Ratio")
         intp = self.intp_bids(bid_l, bid_r, cur_ratio)
         self.logger.log(logging.INFO, "INTP Result : " + str(intp) + " " + str(self.profile.getUtility(intp)))
         return intp
@@ -545,8 +545,9 @@ class DreamTeam109Agent(DefaultParty):
         chosen_bid_utility = self.bids_with_utilities[index][1]
 
         if chosen_bid_utility < reservation_bid_utility:
-            mapped_utility = reservation_bid_utility + (1 - reservation_bid_utility) * chosen_bid_utility
-            return mapped_utility
+            mapped_utility = reservation_bid_utility + (1 - reservation_bid_utility) * float(chosen_bid_utility)
+            closest_bid = min(self.bids_with_utilities, key=lambda x: abs(float(x[1]) - mapped_utility))
+            return closest_bid[0]
 
         return self.bids_with_utilities[index][0]
 
