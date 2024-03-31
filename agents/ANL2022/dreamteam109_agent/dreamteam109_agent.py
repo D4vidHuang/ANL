@@ -40,6 +40,8 @@ from .utils.logger import Logger
 from .utils.opponent_model import OpponentModel
 from .utils.utils import bid_to_string
 
+from sklearn.cluster import DBSCAN
+
 class SessionData(TypedDict):
     progressAtFinish: float
     utilityAtFinish: float
@@ -120,6 +122,45 @@ class DreamTeam109Agent(DefaultParty):
         kmeans.fit(utilities)
         #print("Kmeans over")
         return kmeans.labels_, list(map(lambda c: c[0], kmeans.cluster_centers_))
+
+    def dbscan_method(self):
+        utilities = np.array([float(self.profile.getUtility(bid)) for bid in self.all_bids_list]).reshape(-1, 1)
+
+
+        #这个地方你可以改到底要多少个类，就这玩意和kmeans不一样的点是它有很多个类但是会决定一些类为噪声，最后只取最好的两个
+        #我尝试了一下但是好像感觉取多少类这个问题没什么解决方案，就是影响不大
+        dbscan = DBSCAN(eps=0.05, min_samples=5).fit(utilities)
+        labels = dbscan.labels_
+
+        unique_labels = set(labels) - {-1}
+
+        if not unique_labels:
+            return self.random_explore(), self.random_explore()
+
+        bids_by_cluster = {label: [] for label in unique_labels}
+        for bid, label in zip(self.all_bids_list, labels):
+            if label in bids_by_cluster:
+                bids_by_cluster[label].append(bid)
+
+        largest_clusters = sorted(bids_by_cluster.keys(), key=lambda x: len(bids_by_cluster[x]), reverse=True)[:2]
+
+        representative_bids = []
+        for cluster in largest_clusters:
+            cluster_bids = bids_by_cluster[cluster]
+            average_utility = np.mean([self.profile.getUtility(bid) for bid in cluster_bids])
+            representative_bid = min(cluster_bids, key=lambda bid: abs(self.profile.getUtility(bid) - average_utility))
+            representative_bids.append(representative_bid)
+
+        while len(representative_bids) < 2:
+            representative_bids.append(representative_bids[0])
+
+        return representative_bids[0], representative_bids[1]
+
+
+
+
+
+
 
 
 
@@ -515,8 +556,9 @@ class DreamTeam109Agent(DefaultParty):
         
     def intp_method(self):
         #print("INTP Method is used.")
-        labels, centers = self.k_means(self.all_bids_list)
-        bid_0, bid_1 = self.find_bid_match_centres(self.all_bids_list, labels, centers)
+        #labels, centers = self.k_means(self.all_bids_list)
+        #bid_0, bid_1 = self.find_bid_match_centres(self.all_bids_list, labels, centers)
+        bid_0, bid_1 = self.dbscan_method()
         bid_l = bid_0 if self.profile.getUtility(bid_0) < self.profile.getUtility(bid_1) else bid_1
         bid_r = bid_0 if self.profile.getUtility(bid_0) >= self.profile.getUtility(bid_1) else bid_1
         #self.logger.log(logging.INFO, str(bid_l) + " " + str(self.profile.getUtility(bid_l)))
