@@ -1,0 +1,2938 @@
+{
+  "actions": [
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9530274604,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3245507971
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueI",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3199307152,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.825825263
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9696576012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.204488944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueA",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.1854707064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.833029756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9696576012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.204488944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueD",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2284796152,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8781712499
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueE",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3387511396,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.877144443
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueJ",
+            "issueD": "valueI",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.299605916,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8215750267
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9696576012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.204488944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5142312623,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8412469807
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueA",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9593346844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2120777067
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5142312623,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8412469807
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3313427924,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8416233998
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueN",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.1645268632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8304222922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9612539584,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2582121763
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2983434864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8434865835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueA",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3284766012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9083029296
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueI",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3199307152,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.825825263
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueA",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9593346844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2120777067
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueL",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2433605684,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9000179803
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9589412004,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2762759289
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueG",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2931460696,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8820427644
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9696576012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.204488944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueH",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.1798060208,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8053942696
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.978770694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2781806367
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueD",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.1521437204,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8364912499
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9649280176,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2037485152
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueD",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.1521437204,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8364912499
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3076792036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8919755277
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueI",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3199307152,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.825825263
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9530274604,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3245507971
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3076792036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8919755277
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueI",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2373403808,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.89917
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueD",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2167096152,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8079944235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueG",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2285801748,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9105395908
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9649280176,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2037485152
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2983434864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8434865835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3334468976,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9037133998
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueG",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2931460696,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8820427644
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueA",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9593346844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2120777067
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueG",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2931460696,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8820427644
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9530274604,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3245507971
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueJ",
+            "issueD": "valueI",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2350400212,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8500718531
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9649280176,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2037485152
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2421812344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8182601776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.978770694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2781806367
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueI",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueA",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9593346844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2120777067
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9612539584,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2582121763
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.978770694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2781806367
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2410092036,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8583823541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4430228743,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7238759249
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4430228743,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7238759249
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4430228743,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7238759249
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4430228743,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7238759249
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.978770694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2781806367
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9612539584,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2582121763
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueB",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.978770694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2781806367
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.4507359979,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.573947778
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.95814,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4561621662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.2085132864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4174799808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6135687886,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3630534941
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6047204218,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4224782931
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueA",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.6051139058,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3582800709
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9530274604,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3245507971
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9453143368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.474478944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9530274604,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3245507971
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueM",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 1.0,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2061406266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueH",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9096664112,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2228995809
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5725984314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3085849707
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9453143368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.474478944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5814467982,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2491601717
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9453143368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.474478944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5814467982,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2491601717
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.9453143368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.474478944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5814467982,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2491601717
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueK",
+            "issueD": "valueH",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueA",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.5814467982,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2491601717
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueE": "valueO",
+            "issueD": "valueH",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.8755195348,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3229929736
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    },
+    {
+      "Accept": {
+        "actor": "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    }
+  ],
+  "connections": [
+    "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1",
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2"
+  ],
+  "progress": {
+    "ProgressTime": {
+      "duration": 10000,
+      "start": 1712000217009
+    }
+  },
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/Test1"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {
+    "agents_ANL2022_compromising_agent_compromising_agent_CompromisingAgent_1": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/Test1"
+        }
+      },
+      "profile": "file:domains/domain00/profileA.json"
+    },
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      "profile": "file:domains/domain00/profileB.json"
+    }
+  },
+  "error": null
+}

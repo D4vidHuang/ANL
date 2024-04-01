@@ -89,6 +89,7 @@ class DreamTeam109Agent(DefaultParty):
         self.force_accept_at_remaining_turns_light: float = 1
         self.opponent_best_bid: Bid = None
         self.logger.log(logging.INFO, "party is initialized")
+        self.opponent_bids: List[Bid] = []
 
         self.issues: List[str] = None
         self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None 
@@ -122,6 +123,18 @@ class DreamTeam109Agent(DefaultParty):
         kmeans.fit(utilities)
         #print("Kmeans over")
         return kmeans.labels_, list(map(lambda c: c[0], kmeans.cluster_centers_))
+
+    def infer_opponent_bottom_line(self):
+        utilities = self.get_bid_utilities(self.all_bids_list)
+        if len(utilities) < 2:
+            return None
+        utilities_array = np.array(utilities).reshape(-1, 1)
+        kmeans = KMeans(n_clusters=2, random_state=0).fit(utilities_array)
+        bottom_line_estimate = min(kmeans.cluster_centers_)[0]
+        return bottom_line_estimate
+
+    def get_bid_utilities(self, bids):
+        return [self.profile.getUtility(bid) for bid in bids]
 
     def dbscan_method(self):
         utilities = np.array([float(self.profile.getUtility(bid)) for bid in self.all_bids_list]).reshape(-1, 1)
@@ -306,7 +319,7 @@ class DreamTeam109Agent(DefaultParty):
             bid = cast(Offer, action).getBid()  
 
             self.all_bids_list.append(bid)
-            
+
             # update opponent model with bid
             self.opponent_model.update(bid)
             # set bid as last received
@@ -325,7 +338,7 @@ class DreamTeam109Agent(DefaultParty):
         以增加谈判成功的可能性。同时记录行动时间，以便用于计算平均行动时间，这可能对未来的决策有影响。
         最后，它通过日志记录详细说明了决策过程。
         """
-
+        opponent_bottom_line_estimate = self.infer_opponent_bottom_line()
         if hasattr(self, 'last_time') and self.last_time is not None:
             self.round_times.append(time.time() * 1000 - self.last_time)
             self.avg_time = sum(self.round_times[-3:]) / len(self.round_times[-3:])
@@ -339,11 +352,18 @@ class DreamTeam109Agent(DefaultParty):
             self.all_bids_list.append(bid)
             t = self.progress.get(time.time() * 1000)
 
-            if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
+            if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0 :
+                # print("opponent_bottom_line_estimate: " + opponent_bottom_line_estimate)
+                # bid = self.generate_offer_based_on_estimate(opponent_bottom_line_estimate)
                 t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
                 self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
                 while t < 1 - t_o:
                     t = self.progress.get(time.time() * 1000)
+            # elif t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
+            #     t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
+            #     self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
+            #     while t < 1 - t_o:
+            #         t = self.progress.get(time.time() * 1000)
             
             action = Offer(self.me, bid)
             self.logger.log(logging.INFO, f"Offering bid: {bid}")

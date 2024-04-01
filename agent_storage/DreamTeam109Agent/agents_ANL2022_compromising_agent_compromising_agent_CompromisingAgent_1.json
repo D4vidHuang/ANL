@@ -183,6 +183,30 @@
             "isGood": false,
             "topBidsPercentage": 0.03333333333333333,
             "forceAcceptAtRemainingTurns": 1.1
+        },
+        {
+            "progressAtFinish": 0.8907600830078125,
+            "utilityAtFinish": 0.2351679077,
+            "didAccept": false,
+            "isGood": false,
+            "topBidsPercentage": 0.03333333333333333,
+            "forceAcceptAtRemainingTurns": 1.1
+        },
+        {
+            "progressAtFinish": 0.8821599609375,
+            "utilityAtFinish": 0.3367129117,
+            "didAccept": false,
+            "isGood": false,
+            "topBidsPercentage": 0.03333333333333333,
+            "forceAcceptAtRemainingTurns": 1.1
+        },
+        {
+            "progressAtFinish": 0.9682435546875,
+            "utilityAtFinish": 0.5282021763,
+            "didAccept": false,
+            "isGood": false,
+            "topBidsPercentage": 0.03333333333333333,
+            "forceAcceptAtRemainingTurns": 1.1
         }
     ]
 }
