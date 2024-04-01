@@ -1,0 +1,9 @@
+results/
+docs/
+domains/
+venv/
+utils/
+.idea/
+agent_storage/
+_pycache_
+*.log
