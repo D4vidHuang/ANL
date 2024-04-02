@@ -179,7 +179,11 @@ class DreamTeam109Agent(DefaultParty):
 
     def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float):
         bid_raw: Dict[str, str] = {}
-        for cur_issue in self.issues:
+        rand = np.random.choice(range(0, len(self.issues)), size=3, replace=False)
+        for ci, cur_issue in enumerate(self.issues):
+            if ci not in rand:
+                bid_raw[cur_issue] = bid_r.getValue(cur_issue)
+                continue
             cur_utility = self.sorted_issue_utility[cur_issue]
             val_l, val_r = bid_l.getValue(cur_issue), bid_r.getValue(cur_issue)
             idx_l, idx_r = None, None
@@ -480,6 +484,7 @@ class DreamTeam109Agent(DefaultParty):
 
         # 获取谈判的当前进度
         progress = self.progress.get(time.time() * 1000)
+        if progress < 0.95: return False
 
         # 动态调整接受报价的阈值，考虑历史数据和谈判平均时间
         dynamic_threshold = self.calculate_dynamic_threshold(progress)
@@ -534,15 +539,15 @@ class DreamTeam109Agent(DefaultParty):
         progress = self.progress.get(time.time() * 1000)
 
         # 如果接近谈判末端并有对手的最佳报价，直接考虑使用
-        if progress > 0.95 and hasattr(self, 'opponent_best_bid') and self.opponent_best_bid is not None:
-            return self.opponent_best_bid
+        #if progress > 0.95 and hasattr(self, 'opponent_best_bid') and self.opponent_best_bid is not None:
+            #return self.opponent_best_bid
 
         # 根据谈判进度选择策略
         if progress < 0.2:
             #print("Progress 1")
             # 谈判前半段随机探索
             return self.random_explore()
-        elif progress < 0.95:
+        elif progress <= 1:
             #print("Progress 2")
             try:
                 return self.intp_method()
@@ -568,10 +573,9 @@ class DreamTeam109Agent(DefaultParty):
                 dsts[cur_label] = abs(cur_utility - centres[cur_label])
         return best_bids
 
-    def get_ratio(self): 
-        self.logger.log(logging.INFO, f"progress : {self.progress.get(time.time() * 1000)}")
-        ratio = (self.progress.get(time.time() * 1000) - 0.2) / (0.95 - 0.2)
-        return 1 - ratio
+    def get_ratio(self, cond=True): 
+        ratio = 0.5 + 0.2 * (np.cos(self.progress.get(time.time() * 1000) * np.pi) + 1) * 0.5 + 0.25 * np.random.random()
+        return ratio
 
         
     def intp_method(self):
@@ -584,6 +588,7 @@ class DreamTeam109Agent(DefaultParty):
         #self.logger.log(logging.INFO, str(bid_l) + " " + str(self.profile.getUtility(bid_l)))
         #self.logger.log(logging.INFO, str(bid_r) + " " + str(self.profile.getUtility(bid_r)))
         cur_ratio = self.get_ratio()
+        self.logger.log(logging.INFO, f"[cur_ratio] cur_ratio : {cur_ratio}")
         #print("Ratio")
         intp = self.intp_bids(bid_l, bid_r, cur_ratio)
         self.logger.log(logging.INFO, "INTP Result : " + str(intp) + " " + str(self.profile.getUtility(intp)))
@@ -601,7 +606,7 @@ class DreamTeam109Agent(DefaultParty):
 
     def random_explore(self):
 
-        reservation_bid_utility = 0.8
+        reservation_bid_utility = 0.9
 
         index = randint(0, len(self.bids_with_utilities) - 1)
         chosen_bid_utility = self.bids_with_utilities[index][1]

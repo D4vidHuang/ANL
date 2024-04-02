@@ -18,7 +18,7 @@ if not RESULTS_DIR.exists():
 settings = {
     "agents": [
         {
-            "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+            "class": "agents.CSE3210.agent52.agent52.Agent52",
             "parameters": {"storage_dir": "agent_storage/Test1"},
         },
         {
