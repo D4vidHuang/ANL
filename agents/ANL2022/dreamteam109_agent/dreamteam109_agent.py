@@ -92,13 +92,13 @@ class DreamTeam109Agent(DefaultParty):
         self.opponent_bids: List[Bid] = []
 
         self.issues: List[str] = None
-        self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None 
-        self.weights: Dict[str, Decimal] = None 
+        self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None
+        self.weights: Dict[str, Decimal] = None
 
         self.all_bids_list: List[Bid] = []
         self.reservation_bid_utility = 0.8
 
-    
+
     def preprocessing(self):
         self.issues = list(self.profile.getWeights().keys())
         self.weights = self.profile.getWeights()
@@ -170,13 +170,6 @@ class DreamTeam109Agent(DefaultParty):
         return representative_bids[0], representative_bids[1]
 
 
-
-
-
-
-
-
-
     def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float):
         bid_raw: Dict[str, str] = {}
         rand = np.random.choice(range(0, len(self.issues)), size=3, replace=False)
@@ -188,8 +181,8 @@ class DreamTeam109Agent(DefaultParty):
             val_l, val_r = bid_l.getValue(cur_issue), bid_r.getValue(cur_issue)
             idx_l, idx_r = None, None
             for idx, (k, v) in enumerate(cur_utility):
-                if k == val_l: idx_l = idx 
-                if k == val_r: idx_r = idx 
+                if k == val_l: idx_l = idx
+                if k == val_r: idx_r = idx
             idx_diff = idx_r - idx_l
             self.logger.log(logging.INFO, f"idx_l : {idx_l} | idx_r : {idx_r} | idx_diff: {idx_diff}")
             offset = round(idx_diff * ratio)
@@ -197,7 +190,7 @@ class DreamTeam109Agent(DefaultParty):
             bid_raw[cur_issue] = cur_utility[idx_l + offset][0]
         #print("bid")
         #print(bid_raw)
-        bid = Bid(bid_raw) # 他妈为什么doc都不给一个？？？ 我都不知道怎么创建Bid。
+        bid = Bid(bid_raw)
         #print("Create bid")
         return bid
 
@@ -231,7 +224,7 @@ class DreamTeam109Agent(DefaultParty):
             # compose a list of all possible bids
             self.all_bids = AllBidsList(self.domain)
             #print(dir(self.profile))
-            #print(self.profile.getUtilities()['issueA'].getUtilities())   
+            #print(self.profile.getUtilities()['issueA'].getUtilities())
             #print(self.profile.getWeights())
             #print(self.domain)
             self.preprocessing()
@@ -267,7 +260,7 @@ class DreamTeam109Agent(DefaultParty):
                 self.utility_at_finish = float(self.profile.getUtility(agreed_bid))
             else:
                 self.logger.log(logging.INFO, "no agreed bid (timeout? some agent crashed?)")
-            
+
             self.update_data_dict()
             self.save_data()
 
@@ -320,7 +313,7 @@ class DreamTeam109Agent(DefaultParty):
             if self.opponent_model is None:
                 self.opponent_model = OpponentModel(self.domain, self.logger)
 
-            bid = cast(Offer, action).getBid()  
+            bid = cast(Offer, action).getBid()
 
             self.all_bids_list.append(bid)
 
@@ -357,18 +350,12 @@ class DreamTeam109Agent(DefaultParty):
             t = self.progress.get(time.time() * 1000)
 
             if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0 :
-                # print("opponent_bottom_line_estimate: " + opponent_bottom_line_estimate)
-                # bid = self.generate_offer_based_on_estimate(opponent_bottom_line_estimate)
+
                 t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
                 self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
                 while t < 1 - t_o:
                     t = self.progress.get(time.time() * 1000)
-            # elif t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
-            #     t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
-            #     self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
-            #     while t < 1 - t_o:
-            #         t = self.progress.get(time.time() * 1000)
-            
+
             action = Offer(self.me, bid)
             self.logger.log(logging.INFO, f"Offering bid: {bid}")
 
@@ -462,11 +449,6 @@ class DreamTeam109Agent(DefaultParty):
         self.force_accept_at_remaining_turns = max(0, min(self.force_accept_at_remaining_turns, 2))  # 保持接受报价的倾向在合理范围
         self.force_accept_at_remaining_turns_light = max(0, min(self.force_accept_at_remaining_turns_light, 2))  # 同上
 
-        #self.logger.log(logging.INFO,
-        #                f"Adjusted strategies: min_util={self.min_util}, top_bids_percentage={self.top_bids_percentage}, "
-        #                f"force_accept_at_remaining_turns={self.force_accept_at_remaining_turns}, "
-        #                f"force_accept_at_remaining_turns_light={self.force_accept_at_remaining_turns_light}")
-
     def did_fail(self, session: SessionData):
         return session["utilityAtFinish"] == 0
 
@@ -538,9 +520,6 @@ class DreamTeam109Agent(DefaultParty):
         # 谈判进展阶段判断
         progress = self.progress.get(time.time() * 1000)
 
-        # 如果接近谈判末端并有对手的最佳报价，直接考虑使用
-        #if progress > 0.95 and hasattr(self, 'opponent_best_bid') and self.opponent_best_bid is not None:
-            #return self.opponent_best_bid
 
         # 根据谈判进度选择策略
         if progress < 0.2:
@@ -556,7 +535,7 @@ class DreamTeam109Agent(DefaultParty):
         else:
             # 谈判后半段选择效用值较高的报价
             return self.choose_high_utility_bid(progress)
-        
+
     def find_bid_match_centres(self, bids: List[Bid], labels: np.ndarray, centres: np.ndarray):
         best_bids = [None, None]
         dsts = [1, 1]
@@ -564,7 +543,7 @@ class DreamTeam109Agent(DefaultParty):
             cur_utility = float(self.profile.getUtility(bid))
             cur_label = labels[idx]
             if best_bids[cur_label] is None or abs(cur_utility - centres[cur_label]) < dsts[cur_label]:
-                best_bids[cur_label] = bid 
+                best_bids[cur_label] = bid
                 #print("Before")
                 #print(cur_utility, centres[cur_label])
                 #print(type(cur_utility), type(centres[cur_label]))
@@ -573,11 +552,11 @@ class DreamTeam109Agent(DefaultParty):
                 dsts[cur_label] = abs(cur_utility - centres[cur_label])
         return best_bids
 
-    def get_ratio(self, cond=True): 
+    def get_ratio(self, cond=True):
         ratio = 0.5 + 0.2 * (np.cos(self.progress.get(time.time() * 1000) * np.pi) + 1) * 0.5 + 0.25 * np.random.random()
         return ratio
 
-        
+
     def intp_method(self):
         #print("INTP Method is used.")
         #labels, centers = self.k_means(self.all_bids_list)
