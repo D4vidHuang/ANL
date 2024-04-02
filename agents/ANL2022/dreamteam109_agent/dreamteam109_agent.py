@@ -7,7 +7,9 @@ from random import randint, random
 import time
 from decimal import Decimal
 from os import path
-from typing import TypedDict, cast, List, Dict
+from typing import TypedDict, cast, List, Dict, Tuple
+import numpy as np
+from sklearn.cluster import KMeans
 
 from geniusweb.actions.Accept import Accept
 from geniusweb.actions.Action import Action
@@ -38,6 +40,8 @@ from .utils.logger import Logger
 from .utils.opponent_model import OpponentModel
 from .utils.utils import bid_to_string
 
+from sklearn.cluster import DBSCAN
+
 class SessionData(TypedDict):
     progressAtFinish: float
     utilityAtFinish: float
@@ -48,6 +52,7 @@ class SessionData(TypedDict):
 
 class DataDict(TypedDict):
     sessions: list[SessionData]
+
 
 class DreamTeam109Agent(DefaultParty):
 
@@ -84,6 +89,110 @@ class DreamTeam109Agent(DefaultParty):
         self.force_accept_at_remaining_turns_light: float = 1
         self.opponent_best_bid: Bid = None
         self.logger.log(logging.INFO, "party is initialized")
+        self.opponent_bids: List[Bid] = []
+
+        self.issues: List[str] = None
+        self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None
+        self.weights: Dict[str, Decimal] = None
+
+        self.all_bids_list: List[Bid] = []
+        self.reservation_bid_utility = 0.8
+
+
+    def preprocessing(self):
+        self.issues = list(self.profile.getWeights().keys())
+        self.weights = self.profile.getWeights()
+        utility_map = self.profile.getUtilities()
+        for k in list(utility_map.keys()):
+            v = utility_map[k]
+            dv = v.getUtilities()
+            sdv = list(dict(sorted(dv.items(), key=lambda it: it[1])).items())
+            utility_map[k] = sdv
+        self.sorted_issue_utility = utility_map
+
+
+    def k_means(self, bids: List[Bid]) -> Tuple[np.ndarray, np.ndarray]:
+        #print(bids)
+        utilities = []
+        for b in bids: utilities.append(float(self.profile.getUtility(b)))
+        #print(len(utilities))
+        utilities = np.array(np.reshape(utilities, newshape=(-1, 1)))
+        #print(len(bids))
+        #utilities: np.ndarray = np.ndarray(map(lambda b: self.profile.getUtility(b), bids))
+        kmeans = KMeans(n_clusters=2)
+        kmeans.fit(utilities)
+        #print("Kmeans over")
+        return kmeans.labels_, list(map(lambda c: c[0], kmeans.cluster_centers_))
+
+    def infer_opponent_bottom_line(self):
+        utilities = self.get_bid_utilities(self.all_bids_list)
+        if len(utilities) < 2:
+            return None
+        utilities_array = np.array(utilities).reshape(-1, 1)
+        kmeans = KMeans(n_clusters=2, random_state=0).fit(utilities_array)
+        bottom_line_estimate = min(kmeans.cluster_centers_)[0]
+        return bottom_line_estimate
+
+    def get_bid_utilities(self, bids):
+        return [self.profile.getUtility(bid) for bid in bids]
+
+    def dbscan_method(self):
+        utilities = np.array([float(self.profile.getUtility(bid)) for bid in self.all_bids_list]).reshape(-1, 1)
+
+
+        #这个地方你可以改到底要多少个类，就这玩意和kmeans不一样的点是它有很多个类但是会决定一些类为噪声，最后只取最好的两个
+        #我尝试了一下但是好像感觉取多少类这个问题没什么解决方案，就是影响不大
+        dbscan = DBSCAN(eps=0.05, min_samples=5).fit(utilities)
+        labels = dbscan.labels_
+
+        unique_labels = set(labels) - {-1}
+
+        if not unique_labels:
+            return self.random_explore(), self.random_explore()
+
+        bids_by_cluster = {label: [] for label in unique_labels}
+        for bid, label in zip(self.all_bids_list, labels):
+            if label in bids_by_cluster:
+                bids_by_cluster[label].append(bid)
+
+        largest_clusters = sorted(bids_by_cluster.keys(), key=lambda x: len(bids_by_cluster[x]), reverse=True)[:2]
+
+        representative_bids = []
+        for cluster in largest_clusters:
+            cluster_bids = bids_by_cluster[cluster]
+            average_utility = np.mean([self.profile.getUtility(bid) for bid in cluster_bids])
+            representative_bid = min(cluster_bids, key=lambda bid: abs(self.profile.getUtility(bid) - average_utility))
+            representative_bids.append(representative_bid)
+
+        while len(representative_bids) < 2:
+            representative_bids.append(representative_bids[0])
+
+        return representative_bids[0], representative_bids[1]
+
+
+    def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float):
+        bid_raw: Dict[str, str] = {}
+        rand = np.random.choice(range(0, len(self.issues)), size=3, replace=False)
+        for ci, cur_issue in enumerate(self.issues):
+            if ci not in rand:
+                bid_raw[cur_issue] = bid_r.getValue(cur_issue)
+                continue
+            cur_utility = self.sorted_issue_utility[cur_issue]
+            val_l, val_r = bid_l.getValue(cur_issue), bid_r.getValue(cur_issue)
+            idx_l, idx_r = None, None
+            for idx, (k, v) in enumerate(cur_utility):
+                if k == val_l: idx_l = idx
+                if k == val_r: idx_r = idx
+            idx_diff = idx_r - idx_l
+            self.logger.log(logging.INFO, f"idx_l : {idx_l} | idx_r : {idx_r} | idx_diff: {idx_diff}")
+            offset = round(idx_diff * ratio)
+            self.logger.log(logging.INFO, f"ratio : {ratio} | offset : {offset} | cur_utility[idx_l] : {cur_utility[idx_l]} | cur_utility[idx_r] : {cur_utility[idx_r]} | cur_utility[idx_l + offset] : {cur_utility[idx_l + offset]}")
+            bid_raw[cur_issue] = cur_utility[idx_l + offset][0]
+        #print("bid")
+        #print(bid_raw)
+        bid = Bid(bid_raw)
+        #print("Create bid")
+        return bid
 
     def notifyChange(self, data: Inform):
         """MUST BE IMPLEMENTED
@@ -114,7 +223,12 @@ class DreamTeam109Agent(DefaultParty):
             self.domain = self.profile.getDomain()
             # compose a list of all possible bids
             self.all_bids = AllBidsList(self.domain)
-
+            #print(dir(self.profile))
+            #print(self.profile.getUtilities()['issueA'].getUtilities())
+            #print(self.profile.getWeights())
+            #print(self.domain)
+            self.preprocessing()
+            #print(self.sorted_issue_utility)
             profile_connection.close()
 
         # ActionDone informs you of an action (an offer or an accept)
@@ -146,7 +260,7 @@ class DreamTeam109Agent(DefaultParty):
                 self.utility_at_finish = float(self.profile.getUtility(agreed_bid))
             else:
                 self.logger.log(logging.INFO, "no agreed bid (timeout? some agent crashed?)")
-            
+
             self.update_data_dict()
             self.save_data()
 
@@ -201,6 +315,8 @@ class DreamTeam109Agent(DefaultParty):
 
             bid = cast(Offer, action).getBid()
 
+            self.all_bids_list.append(bid)
+
             # update opponent model with bid
             self.opponent_model.update(bid)
             # set bid as last received
@@ -219,7 +335,7 @@ class DreamTeam109Agent(DefaultParty):
         以增加谈判成功的可能性。同时记录行动时间，以便用于计算平均行动时间，这可能对未来的决策有影响。
         最后，它通过日志记录详细说明了决策过程。
         """
-
+        opponent_bottom_line_estimate = self.infer_opponent_bottom_line()
         if hasattr(self, 'last_time') and self.last_time is not None:
             self.round_times.append(time.time() * 1000 - self.last_time)
             self.avg_time = sum(self.round_times[-3:]) / len(self.round_times[-3:])
@@ -230,9 +346,11 @@ class DreamTeam109Agent(DefaultParty):
             self.logger.log(logging.INFO, f"Accepting bid: {self.last_received_bid}")
         else:
             bid = self.find_bid()
+            self.all_bids_list.append(bid)
             t = self.progress.get(time.time() * 1000)
 
-            if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
+            if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0 :
+
                 t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
                 self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
                 while t < 1 - t_o:
@@ -255,9 +373,9 @@ class DreamTeam109Agent(DefaultParty):
         if os.path.exists(data_file_path):
             with open(data_file_path, 'r') as file:
                 self.data_dict = json.load(file)
-            self.logger.log(logging.INFO, f"Loaded previous data for opponent: {self.other}")
+            #self.logger.log(logging.INFO, f"Loaded previous data for opponent: {self.other}")
         else:
-            self.logger.log(logging.INFO, f"No previous data found for opponent: {self.other}")
+            #self.logger.log(logging.INFO, f"No previous data found for opponent: {self.other}")
             self.data_dict = {"sessions": []}
 
     def update_data_dict(self):
@@ -272,16 +390,16 @@ class DreamTeam109Agent(DefaultParty):
             "forceAcceptAtRemainingTurns": self.force_accept_at_remaining_turns
         }
         self.data_dict["sessions"].append(session_data)
-        self.logger.log(logging.INFO, "Session data updated.")
+        #self.logger.log(logging.INFO, "Session data updated.")
 
     def save_data(self):
         if not self.other:
-            self.logger.log(logging.WARNING, "Opponent name not set; skipping data save.")
+            #self.logger.log(logging.WARNING, "Opponent name not set; skipping data save.")
             return
         data_file_path = self.get_data_file_path()
         with open(data_file_path, 'w') as file:
             json.dump(self.data_dict, file, indent=4)
-        self.logger.log(logging.INFO, f"Data saved for opponent: {self.other}")
+        #self.logger.log(logging.INFO, f"Data saved for opponent: {self.other}")
 
     def learn_from_past_sessions(self):
         """根据以前的会话学习并调整策略参数"""
@@ -293,7 +411,7 @@ class DreamTeam109Agent(DefaultParty):
         good_sessions = [s for s in sessions if s["utilityAtFinish"] >= 0.5]
 
         self.adjust_strategy_based_on_history(failed_sessions, good_sessions)
-        self.logger.log(logging.INFO, "Strategy adjusted based on past sessions.")
+        #self.logger.log(logging.INFO, "Strategy adjusted based on past sessions.")
 
     def adjust_strategy_based_on_history(self, failed_sessions: List[Dict], good_sessions: List[Dict]):
         """根据历史成功和失败会话调整策略参数，这个地方可以加机器学习，我现在是用gpt整了点东西"""
@@ -331,11 +449,6 @@ class DreamTeam109Agent(DefaultParty):
         self.force_accept_at_remaining_turns = max(0, min(self.force_accept_at_remaining_turns, 2))  # 保持接受报价的倾向在合理范围
         self.force_accept_at_remaining_turns_light = max(0, min(self.force_accept_at_remaining_turns_light, 2))  # 同上
 
-        self.logger.log(logging.INFO,
-                        f"Adjusted strategies: min_util={self.min_util}, top_bids_percentage={self.top_bids_percentage}, "
-                        f"force_accept_at_remaining_turns={self.force_accept_at_remaining_turns}, "
-                        f"force_accept_at_remaining_turns_light={self.force_accept_at_remaining_turns_light}")
-
     def did_fail(self, session: SessionData):
         return session["utilityAtFinish"] == 0
 
@@ -353,6 +466,7 @@ class DreamTeam109Agent(DefaultParty):
 
         # 获取谈判的当前进度
         progress = self.progress.get(time.time() * 1000)
+        if progress < 0.95: return False
 
         # 动态调整接受报价的阈值，考虑历史数据和谈判平均时间
         dynamic_threshold = self.calculate_dynamic_threshold(progress)
@@ -393,30 +507,73 @@ class DreamTeam109Agent(DefaultParty):
         """
 
     def find_bid(self) -> Bid:
-        self.logger.log(logging.INFO, "Finding bid...")
+        #self.logger.log(logging.INFO, "Finding bid...")
 
         # 初始化或更新所有可能报价的效用列表
         if self.bids_with_utilities is None or len(self.bids_with_utilities) == 0:
-            self.logger.log(logging.INFO, "Calculating bids with utilities...")
+            #self.logger.log(logging.INFO, "Calculating bids with utilities...")
             startTime = time.time()
             self.calculate_bids_with_utilities()
             endTime = time.time()
-            self.logger.log(logging.INFO, f"Calculated bids with utilities in {endTime - startTime} seconds.")
+            #self.logger.log(logging.INFO, f"Calculated bids with utilities in {endTime - startTime} seconds.")
 
         # 谈判进展阶段判断
         progress = self.progress.get(time.time() * 1000)
 
-        # 如果接近谈判末端并有对手的最佳报价，直接考虑使用
-        if progress > 0.95 and hasattr(self, 'opponent_best_bid') and self.opponent_best_bid is not None:
-            return self.opponent_best_bid
 
         # 根据谈判进度选择策略
-        if progress < 0.5:
+        if progress < 0.2:
+            #print("Progress 1")
             # 谈判前半段随机探索
             return self.random_explore()
+        elif progress <= 1:
+            #print("Progress 2")
+            try:
+                return self.intp_method()
+            except Exception as e:
+                quit()
         else:
             # 谈判后半段选择效用值较高的报价
             return self.choose_high_utility_bid(progress)
+
+    def find_bid_match_centres(self, bids: List[Bid], labels: np.ndarray, centres: np.ndarray):
+        best_bids = [None, None]
+        dsts = [1, 1]
+        for idx, bid in enumerate(bids):
+            cur_utility = float(self.profile.getUtility(bid))
+            cur_label = labels[idx]
+            if best_bids[cur_label] is None or abs(cur_utility - centres[cur_label]) < dsts[cur_label]:
+                best_bids[cur_label] = bid
+                #print("Before")
+                #print(cur_utility, centres[cur_label])
+                #print(type(cur_utility), type(centres[cur_label]))
+                #print(cur_utility - centres[cur_label])
+                #print("Good")
+                dsts[cur_label] = abs(cur_utility - centres[cur_label])
+        return best_bids
+
+    def get_ratio(self, cond=True):
+        ratio = 0.5 + 0.2 * (np.cos(self.progress.get(time.time() * 1000) * np.pi) + 1) * 0.5 + 0.25 * np.random.random()
+        return ratio
+
+
+    def intp_method(self):
+        #print("INTP Method is used.")
+        #labels, centers = self.k_means(self.all_bids_list)
+        #bid_0, bid_1 = self.find_bid_match_centres(self.all_bids_list, labels, centers)
+        bid_0, bid_1 = self.dbscan_method()
+        bid_l = bid_0 if self.profile.getUtility(bid_0) < self.profile.getUtility(bid_1) else bid_1
+        bid_r = bid_0 if self.profile.getUtility(bid_0) >= self.profile.getUtility(bid_1) else bid_1
+        #self.logger.log(logging.INFO, str(bid_l) + " " + str(self.profile.getUtility(bid_l)))
+        #self.logger.log(logging.INFO, str(bid_r) + " " + str(self.profile.getUtility(bid_r)))
+        cur_ratio = self.get_ratio()
+        self.logger.log(logging.INFO, f"[cur_ratio] cur_ratio : {cur_ratio}")
+        #print("Ratio")
+        intp = self.intp_bids(bid_l, bid_r, cur_ratio)
+        self.logger.log(logging.INFO, "INTP Result : " + str(intp) + " " + str(self.profile.getUtility(intp)))
+        return intp
+
+
 
     def calculate_bids_with_utilities(self):
         """计算所有可能报价的效用值，并排序。"""
@@ -427,35 +584,18 @@ class DreamTeam109Agent(DefaultParty):
         self.bids_with_utilities.sort(key=lambda x: x[1], reverse=True)
 
     def random_explore(self):
-        """随机探索报价空间，选择一个报价，但确保其效用值不低于设定的底线效用值(reservation bid utility)。"""
-        # 设置底线效用值
-        reservation_bid_utility = 0.8
 
-        # 确保bids_with_utilities已经按效用值降序排序
-        self.bids_with_utilities.sort(key=lambda x: x[1], reverse=True)
+        reservation_bid_utility = 0.9
 
-        # 随机选择一个报价的索引
         index = randint(0, len(self.bids_with_utilities) - 1)
         chosen_bid_utility = self.bids_with_utilities[index][1]
 
-        # 如果选中的报价效用值小于底线效用值，则寻找第一个大于等于底线效用值的报价
         if chosen_bid_utility < reservation_bid_utility:
-            for bid, utility in self.bids_with_utilities:
-                if utility >= reservation_bid_utility:
-                    self.logger.log(logging.INFO,
-                                    "Chosen bid utility was below the reservation utility. A higher utility bid has been selected.")
-                    return bid
-            # 如果所有报价的效用值都低于底线效用值，则选择原始随机报价（虽然这种情况不太可能发生，因为底线效用值设置得相对保守）
-            self.logger.log(logging.INFO,
-                            "No bids with utility above or equal to the reservation utility were found. Returning the randomly selected bid.")
-        return self.bids_with_utilities[index][0]
+            mapped_utility = reservation_bid_utility + (1 - reservation_bid_utility) * float(chosen_bid_utility)
+            closest_bid = min(self.bids_with_utilities, key=lambda x: abs(float(x[1]) - mapped_utility))
+            return closest_bid[0]
 
-    def choose_high_utility_bid(self, progress):
-        """根据谈判进展选择一个高效用值的报价。"""
-        # 考虑使用动态比例选择报价
-        top_percentage = max(5, len(self.bids_with_utilities) * self.top_bids_percentage * (1 - progress))
-        top_index = int(min(len(self.bids_with_utilities) - 1, top_percentage))
-        return self.bids_with_utilities[top_index][0]
+        return self.bids_with_utilities[index][0]
 
     def score_bid(self, bid: Bid, alpha: float = 0.95, eps: float = 0.1) -> float:
         """Calculate heuristic score for a bid with dynamic adjustments and stochastic elements.

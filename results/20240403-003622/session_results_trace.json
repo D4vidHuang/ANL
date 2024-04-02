@@ -1,0 +1,4738 @@
+{
+  "actions": [
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueC",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9012872288,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3347308457
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueF",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2309392224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9696269791
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueG",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9824832644,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1861721662
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3767834864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9472565835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9453143368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.474478944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueH",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2582460208,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9091642696
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE",
+            "issueB": "valueE",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueE",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.922608442,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2529542308
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueG",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9158132644,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1525789926
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3101134864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9136634099
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9465602612,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.28889114
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueF",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2309392224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9696269791
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9677895672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2168511299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3101134864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9136634099
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueA",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9593346844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2120777067
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueM",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3334468976,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9037133998
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueB",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueE",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.92156,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1023706266
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9465602612,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.28889114
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3101134864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9136634099
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueD",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9436987116,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2757885253
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3767834864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9472565835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE",
+            "issueB": "valueE",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueF",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2309392224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9696269791
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueD",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9521023544,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.222065293
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueF",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2309392224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9696269791
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH",
+            "issueB": "valueE",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9247991232,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2115914964
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9085279144,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2187789995
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueE",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9205043368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1908642308
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueJ",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2252227924,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.93791
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA",
+            "issueB": "valueE",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9304638088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2392269828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2431133088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9204723541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueF",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9377118944,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.348315939
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2639107064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.936799756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueG",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9612539584,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2582121763
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3767834864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9472565835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3101134864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9136634099
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueE",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9205043368,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1908642308
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3767834864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9472565835
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueG",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9696576012,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.204488944
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueB",
+            "issueB": "valueB",
+            "issueA": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3101134864,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9136634099
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM",
+            "issueB": "valueE",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9354341052,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.234637453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueG",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2285801748,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9105395908
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK",
+            "issueB": "valueH",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.954963904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2351679077
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueG",
+            "issueB": "valueB",
+            "issueA": "valueC"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2285801748,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9105395908
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB",
+            "issueB": "valueG",
+            "issueA": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9612539584,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2582121763
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.328334358,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7721020307
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5226349051,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7875237484
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9232216116,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1881000358
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5303480287,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6375956015
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7215891781,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1738615806
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9407383472,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2080684962
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.567132799,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3466645859
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.328334358,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7721020307
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9085279144,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2187789995
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5226349051,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7875237484
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7040724425,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1538931202
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7215891781,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1738615806
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.567132799,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3466645859
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5993432318,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3359540826
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.202904268,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6294981277
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.567132799,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3466645859
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.567132799,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3466645859
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7040724425,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1538931202
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2035590228,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4633318285
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7040724425,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1538931202
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7215891781,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1738615806
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2431133088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9204723541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.6893787453,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1845720839
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9232216116,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1881000358
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9377118944,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.348315939
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8996795476,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2782037985
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9377118944,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.348315939
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8996795476,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2782037985
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7185627253,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3141090234
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8996795476,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2782037985
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2027578224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6432180658
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8903980092,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2636647341
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5812133266,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3808398172
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.6987682005,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.180462077
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9032236724,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2453479563
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8903980092,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2636647341
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2027578224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6432180658
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5890686934,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3671125692
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5226349051,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7875237484
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5568582606,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3778230725
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.898253376,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2499374861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5890686934,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3671125692
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5890686934,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3671125692
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9304638088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2392269828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5568582606,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3778230725
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.6937979041,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1850516068
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8963169324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3393203755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8963169324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3393203755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.6791042069,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2157305705
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2437680636,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7543060549
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5890686934,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3671125692
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2402332876,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7009502136
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.898253376,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2499374861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.898253376,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2499374861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2305837204,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9402612499
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8963169324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3393203755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4667255775,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6224070895
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.898253376,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2499374861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2735602736,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6974887197
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.554921817,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4672059619
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4667255775,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6224070895
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5568582606,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3778230725
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2124073896,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4039070295
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7113146397,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2050200672
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2124073896,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4039070295
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.554921817,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4672059619
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7113146397,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2050200672
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7113146397,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2050200672
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5890686934,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3671125692
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.898253376,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2499374861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9247991232,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2115914964
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4526936575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6497577161
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7056499541,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1773845808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4667255775,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6224070895
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8925886904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2223019997
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2639107064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.936799756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7056499541,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1773845808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2402332876,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7009502136
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8925886904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2223019997
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2124073896,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4039070295
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5492571314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4395704755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.3206212344,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9220301776
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5325387099,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.5962328671
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4449805339,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.799685863
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.551193575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3501875861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7056499541,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1773845808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8925886904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2223019997
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5834040078,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3394770828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8925886904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2223019997
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.202904268,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6294981277
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5492571314,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4395704755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2508264324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7705442072
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueE",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.7056499541,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1773845808
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2506799868,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7842641453
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5834040078,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3394770828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.328334358,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7721020307
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5834040078,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3394770828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2429668632,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9341922922
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5666855863,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4961394744
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.328334358,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7721020307
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5325387099,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.5962328671
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2431133088,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.9204723541
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5834040078,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3394770828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.551193575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3501875861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5834040078,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3394770828
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.551193575,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3501875861
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.238296844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.790333103
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueH"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8925886904,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2223019997
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.1903746796,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6492870235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5548335363,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.5038065004
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2639107064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.936799756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9065914708,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3081618889
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2237016656,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6458255296
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5715519578,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3471441088
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4736375007,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6523651799
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8963169324,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3393203755
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2314147892,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4958973827
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5715519578,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3471441088
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2027578224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6432180658
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.554921817,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4672059619
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2314147892,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4958973827
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9129470732,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2192585224
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.1980878032,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4993588766
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueD",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9056663648,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2056763848
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.27162383,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7868716091
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8884615656,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3530476235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueO"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.202904268,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6294981277
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9142047992,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3066774631
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2313849208,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7603750126
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueB",
+            "issueD": "valueH",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8874131236,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2024640193
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2639107064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.936799756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueC",
+            "issueC": "valueB",
+            "issueD": "valueF",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5460180082,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3303496057
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.224502866,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4659392923
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueB",
+            "issueB": "valueH",
+            "issueC": "valueB",
+            "issueD": "valueH",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8893495672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1130811299
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2639107064,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.936799756
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5384951458,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3831835528
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.1903746796,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6492870235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8399214708,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2745687153
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4736375007,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6523651799
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueK"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5282439235,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.5755056015
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueE",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.912100694,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2445874631
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2647119068,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7569135187
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8798902612,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2552979664
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueF",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2313849208,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7603750126
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8565516116,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1545068622
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.238296844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.790333103
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8798902612,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2552979664
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.1903746796,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6492870235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.574418149,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.280464579
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.2027578224,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6432180658
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.553188843,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3525045891
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueC",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.4659243771,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.8022933268
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueE"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8418579144,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1851858259
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueN"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.210470946,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.4932899189
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.8798902612,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.2552979664
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueB",
+            "issueC": "valueA",
+            "issueD": "valueB",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.1903746796,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.6492870235
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.5597244518,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3111435427
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueD"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.238296844,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.790333103
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueG",
+            "issueC": "valueA",
+            "issueD": "valueF",
+            "issueE": "valueB"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.553188843,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.3525045891
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueC",
+            "issueB": "valueC",
+            "issueC": "valueA",
+            "issueD": "valueI",
+            "issueE": "valueA"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.27162383,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.7868716091
+        }
+      }
+    },
+    {
+      "Offer": {
+        "actor": "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+        "bid": {
+          "issuevalues": {
+            "issueA": "valueA",
+            "issueB": "valueH",
+            "issueC": "valueA",
+            "issueD": "valueH",
+            "issueE": "valueM"
+          }
+        },
+        "utilities": {
+          "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": 0.9011195672,
+          "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": 0.1832579563
+        }
+      }
+    }
+  ],
+  "connections": [
+    "agents_GroupAgent_groupAgent_DreamTeam109Agent_1",
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2"
+  ],
+  "progress": {
+    "ProgressTime": {
+      "duration": 10000,
+      "start": 1712097383298
+    }
+  },
+  "settings": {
+    "SAOPSettings": {
+      "participants": [
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.GroupAgent.groupAgent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/Test1"
+                  }
+                },
+                "profile": "file:domains/domain00/profileA.json"
+              }
+            ]
+          }
+        },
+        {
+          "TeamInfo": {
+            "parties": [
+              {
+                "party": {
+                  "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+                  "parameters": {
+                    "storage_dir": "agent_storage/DreamTeam109Agent"
+                  }
+                },
+                "profile": "file:domains/domain00/profileB.json"
+              }
+            ]
+          }
+        }
+      ],
+      "deadline": {
+        "DeadlineTime": {
+          "durationms": 10000
+        }
+      }
+    }
+  },
+  "partyprofiles": {
+    "agents_GroupAgent_groupAgent_DreamTeam109Agent_1": {
+      "party": {
+        "partyref": "pythonpath:agents.GroupAgent.groupAgent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Test1"
+        }
+      },
+      "profile": "file:domains/domain00/profileA.json"
+    },
+    "agents_ANL2022_dreamteam109_agent_dreamteam109_agent_DreamTeam109Agent_2": {
+      "party": {
+        "partyref": "pythonpath:agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      "profile": "file:domains/domain00/profileB.json"
+    }
+  },
+  "error": null
+}
