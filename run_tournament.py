@@ -18,8 +18,8 @@ if not RESULTS_DIR.exists():
 tournament_settings = {
     "agents": [
         {
-            "class": "agents.template_agent.template_agent.TemplateAgent",
-            "parameters": {"storage_dir": "agent_storage/TemplateAgent"},
+            "class": "agents.group_agent.GroupAgent.GroupAgent",
+            "parameters": {"storage_dir": "agent_storage/GroupAgent"},
         },
         {
             "class": "agents.boulware_agent.boulware_agent.BoulwareAgent",
@@ -118,6 +118,7 @@ tournament_settings = {
     "profile_sets": [
         ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
         ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
+        ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
     ],
     "deadline_time_ms": 10000,
 }

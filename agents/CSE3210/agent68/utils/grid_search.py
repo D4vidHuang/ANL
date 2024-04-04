@@ -54,7 +54,7 @@ for e1 in np.arange(e1_min, e1_max, step):
                     "agents.conceder_agent.conceder_agent.ConcederAgent",
                     # "agents.linear_agent.linear_agent.LinearAgent",
                     # "agents.random_agent.random_agent.RandomAgent",
-                    # "agents.template_agent.template_agent.TemplateAgent",
+                    # "agents.group_agent.group_agent.TemplateAgent",
                     "main.threephase_agent.threephase_agent.ThreePhaseAgent",
                 ],
                 "profile_sets": [
