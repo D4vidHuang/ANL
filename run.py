@@ -18,7 +18,7 @@ if not RESULTS_DIR.exists():
 settings = {
     "agents": [
         {
-            "class": "agents.CSE3210.agent52.agent52.Agent52",
+            "class": "agents.CSE3210.agent55.agent55.Agent55",
             "parameters": {"storage_dir": "agent_storage/Test1"},
         },
         {

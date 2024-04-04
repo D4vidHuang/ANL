@@ -10,6 +10,7 @@ from os import path
 from typing import TypedDict, cast, List, Dict, Tuple
 import numpy as np
 from sklearn.cluster import KMeans
+import itertools
 
 from geniusweb.actions.Accept import Accept
 from geniusweb.actions.Action import Action
@@ -92,15 +93,32 @@ class DreamTeam109Agent(DefaultParty):
         self.opponent_bids: List[Bid] = []
 
         self.issues: List[str] = None
-        self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None 
+        self.sorted_issue_utility: Dict[str, List[Tuple[str, Decimal]]] = None
+        self.sorted_utility: List[Tuple[Tuple, float]] = {} 
         self.weights: Dict[str, Decimal] = None 
 
         self.all_bids_list: List[Bid] = []
         self.reservation_bid_utility = 0.8
 
     
+    def combination(self, utility_map: Dict[str, List[Tuple[str, Decimal]]], NUM_ISSUE: int, tmp: List[Tuple[str, Decimal]], res: List[List[Tuple[str, Decimal]]]) -> None:
+        if len(tmp) == NUM_ISSUE: 
+            res.append(list(tmp))
+        else:
+            cur_idx: int = len(tmp)
+            cur_issue_name: str = self.issues[cur_idx]
+            vals: List[Tuple[str, Decimal]] = utility_map[cur_issue_name]
+            for val in vals: 
+                tmp.append(val)
+                self.combination(utility_map, NUM_ISSUE, tmp, res)
+                tmp.pop()
+
+
+
+
     def preprocessing(self):
         self.issues = list(self.profile.getWeights().keys())
+        NUM_ISSUE: int = len(self.issues)
         self.weights = self.profile.getWeights()
         utility_map = self.profile.getUtilities()
         for k in list(utility_map.keys()):
@@ -109,7 +127,18 @@ class DreamTeam109Agent(DefaultParty):
             sdv = list(dict(sorted(dv.items(), key=lambda it: it[1])).items())
             utility_map[k] = sdv
         self.sorted_issue_utility = utility_map
-
+        combinations: List[List[str]] = []
+        self.combination(utility_map, len(self.issues), [], combinations)
+        tmp = []
+        sorted_utility: Dict[Tuple, float] = {}
+        for comb in combinations:
+            cur_utility = 0
+            for i in range(len(self.issues)): 
+                cur_utility += float(self.weights[self.issues[i]]) * float(comb[i][1])
+                tmp.append(comb[i][0])
+            sorted_utility[tuple(tmp)] = cur_utility
+            tmp = []
+        self.sorted_utility = list(sorted(sorted_utility.items(), key=lambda item: item[1]))
 
     def k_means(self, bids: List[Bid]) -> Tuple[np.ndarray, np.ndarray]:
         #print(bids)
@@ -173,11 +202,33 @@ class DreamTeam109Agent(DefaultParty):
 
 
 
+    def bin_search(self, bid: Bid) -> Tuple:
+        tuil: float = float(self.profile.getUtility(bid))
+        left, right = 0, len(self.sorted_utility) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            #print(f"Left : {left} | Right : {right} | mid : {mid} | diff : {self.sorted_utility[mid][1] - tuil}")
+            if self.sorted_utility[mid][1] - tuil > 1e-5: right = mid - 1
+            elif 1e-5 < tuil - self.sorted_utility[mid][1]: left = mid + 1
+            else: return mid
+        raise Exception("Bin search fails")
 
 
 
 
-    def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float):
+    def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float, strict=False):
+        if strict:
+            #print("in")
+            bid_raw: Dict[str, str] = {}
+            idx_l = self.bin_search(bid_l)
+            idx_r = self.bin_search(bid_r)
+            idx_diff = idx_r - idx_l
+            offset = round(idx_diff * ratio)
+            cur_config: Tuple = self.sorted_utility[idx_l + offset][0]
+            for i in range(len(self.issues)): bid_raw[self.issues[i]] = cur_config[i]
+            bid = Bid(bid_raw)
+            return bid
+
         bid_raw: Dict[str, str] = {}
         rand = np.random.choice(range(0, len(self.issues)), size=3, replace=False)
         for ci, cur_issue in enumerate(self.issues):
@@ -543,7 +594,7 @@ class DreamTeam109Agent(DefaultParty):
             #return self.opponent_best_bid
 
         # 根据谈判进度选择策略
-        if progress < 0.2:
+        if progress < 0.1:
             #print("Progress 1")
             # 谈判前半段随机探索
             return self.random_explore()
@@ -574,7 +625,10 @@ class DreamTeam109Agent(DefaultParty):
         return best_bids
 
     def get_ratio(self, cond=True): 
-        ratio = 0.5 + 0.2 * (np.cos(self.progress.get(time.time() * 1000) * np.pi) + 1) * 0.5 + 0.25 * np.random.random()
+        fixed: float = 0.2 * (np.cos(self.progress.get(time.time() * 1000) * np.pi) + 1) * 0.5
+        flt: float = 0.2 * np.random.random()
+        self.logger.log(logging.INFO, f"Fixed : {fixed} | Float : {flt}")
+        ratio = 0.6 + fixed + flt
         return ratio
 
         
@@ -590,7 +644,7 @@ class DreamTeam109Agent(DefaultParty):
         cur_ratio = self.get_ratio()
         self.logger.log(logging.INFO, f"[cur_ratio] cur_ratio : {cur_ratio}")
         #print("Ratio")
-        intp = self.intp_bids(bid_l, bid_r, cur_ratio)
+        intp = self.intp_bids(bid_l, bid_r, cur_ratio, strict=True)
         self.logger.log(logging.INFO, "INTP Result : " + str(intp) + " " + str(self.profile.getUtility(intp)))
         return intp
 

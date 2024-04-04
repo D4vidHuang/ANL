@@ -23,6 +23,62 @@
             "isGood": true,
             "topBidsPercentage": 0.02,
             "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.95272080078125,
+            "utilityAtFinish": 0.5870865778,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.922203857421875,
+            "utilityAtFinish": 0.5791406847,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.9490549560546875,
+            "utilityAtFinish": 0.5939102631,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.9376858642578125,
+            "utilityAtFinish": 0.6308613568,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.9185975341796875,
+            "utilityAtFinish": 0.5908739436,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.905654638671875,
+            "utilityAtFinish": 0.5662747767,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.9479241455078125,
+            "utilityAtFinish": 0.5875488338,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
         }
     ]
 }
