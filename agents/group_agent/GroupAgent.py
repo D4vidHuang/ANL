@@ -1,16 +1,14 @@
-import datetime
 import json
 import logging
 import os
-from math import floor
+
 from random import randint, random
 import time
 from decimal import Decimal
-from os import path
+
 from typing import TypedDict, cast, List, Dict, Tuple
 import numpy as np
 from sklearn.cluster import KMeans
-import itertools
 
 from geniusweb.actions.Accept import Accept
 from geniusweb.actions.Action import Action
@@ -26,7 +24,7 @@ from geniusweb.issuevalue.Bid import Bid
 from geniusweb.issuevalue.Domain import Domain
 from geniusweb.party.Capabilities import Capabilities
 from geniusweb.party.DefaultParty import DefaultParty
-from geniusweb.issuevalue.Value import Value
+
 from geniusweb.profile.utilityspace.LinearAdditiveUtilitySpace import (
     LinearAdditiveUtilitySpace,
 )
@@ -35,7 +33,7 @@ from geniusweb.profileconnection.ProfileConnectionFactory import (
 )
 from geniusweb.progress.ProgressTime import ProgressTime
 from geniusweb.references.Parameters import Parameters
-from tudelft_utilities_logging.ReportToLogger import ReportToLogger
+
 from .utils.logger import Logger
 
 from .utils.opponent_model import OpponentModel
@@ -140,23 +138,62 @@ class GroupAgent(DefaultParty):
         self.sorted_utility = list(sorted(sorted_utility.items(), key=lambda item: item[1]))
 
     def k_means(self, bids: List[Bid]) -> Tuple[np.ndarray, np.ndarray]:
-        # print(bids)
+        """
+            Performs K-means clustering on the utilities of given bids.
+
+            This function takes a list of Bid objects and performs K-means clustering
+            to categorize them into 2 clusters based on their utility values. It returns
+            the labels for each bid indicating its cluster, and the cluster centers.
+
+            Parameters:
+            - bids: List[Bid]
+                A list of Bid objects. A Bid object has some attributes
+                and methods, including a method to calculate its utility.
+
+            Returns:
+            - Tuple[np.ndarray, np.ndarray]
+                The first ndarray contains the labels for each bid, indicating which
+                cluster the bid belongs to (0 or 1). The second ndarray is a list of the
+                cluster centers' utility values.
+            """
+
         utilities = []
         for b in bids: utilities.append(float(self.profile.getUtility(b)))
-        # print(len(utilities))
+
         utilities = np.array(np.reshape(utilities, newshape=(-1, 1)))
-        # print(len(bids))
-        # utilities: np.ndarray = np.ndarray(map(lambda b: self.profile.getUtility(b), bids))
+
         kmeans = KMeans(n_clusters=2)
         kmeans.fit(utilities)
-        # print("Kmeans over")
+
         return kmeans.labels_, list(map(lambda c: c[0], kmeans.cluster_centers_))
 
     def infer_opponent_bottom_line(self):
+        """
+            Estimates the opponent's bottom line in a negotiation scenario.
+
+            This method applies K-means clustering to the utility values of all possible bids,
+            assuming that these utilities represent how the opponent values each bid. The
+            opponent's bottom line is estimated as the lower center of the two clusters
+            formed by the K-means algorithm, which represents the lower bound of utility
+            values that the opponent might be willing to accept.
+
+            The method returns the estimated utility value of the opponent's bottom line.
+            If there are fewer than two utility values available (meaning clustering cannot
+            be applied), the method returns None, indicating an inability to estimate the
+            bottom line.
+
+            Returns:
+                bottom_line_estimate (float or None): The estimated utility value of the
+                opponent's bottom line or None if the bottom line cannot be estimated.
+            """
+
         utilities = self.get_bid_utilities(self.all_bids_list)
         if len(utilities) < 2:
             return None
         utilities_array = np.array(utilities).reshape(-1, 1)
+        # Estimate the bottom line as the minimum of the two cluster centers.
+        # This is based on the assumption that lower utility values represent
+        # less favorable outcomes for the opponent.
         kmeans = KMeans(n_clusters=2, random_state=0).fit(utilities_array)
         bottom_line_estimate = min(kmeans.cluster_centers_)[0]
         return bottom_line_estimate
@@ -165,10 +202,22 @@ class GroupAgent(DefaultParty):
         return [self.profile.getUtility(bid) for bid in bids]
 
     def dbscan_method(self):
+        """
+            Uses DBSCAN clustering to find representative bids from clusters of bid utilities.
+
+            This method processes the utilities of all bids in `self.all_bids_list` using
+            the DBSCAN algorithm to form clusters based on utility values. It aims to identify
+            two representative bids, ideally from the two largest clusters. If DBSCAN doesn't
+            find any clusters, it resorts to exploring randomly.
+
+            Returns:
+                Tuple[Bid, Bid]: A tuple containing two bids that are considered representative
+                of the largest clusters found by DBSCAN. If only one cluster is found or if
+                no clusters are identified, it returns two identical bids or two random bids.
+            """
         utilities = np.array([float(self.profile.getUtility(bid)) for bid in self.all_bids_list]).reshape(-1, 1)
 
-        # 这个地方你可以改到底要多少个类，就这玩意和kmeans不一样的点是它有很多个类但是会决定一些类为噪声，最后只取最好的两个
-        # 我尝试了一下但是好像感觉取多少类这个问题没什么解决方案，就是影响不大
+
         dbscan = DBSCAN(eps=0.05, min_samples=5).fit(utilities)
         labels = dbscan.labels_
 
@@ -197,6 +246,29 @@ class GroupAgent(DefaultParty):
         return representative_bids[0], representative_bids[1]
 
     def bin_search(self, bid: Bid) -> Tuple:
+        """
+           Performs binary search to find the index of a bid based on its utility value.
+
+           This method searches for the given bid's utility value within a sorted list
+           of utility values (`self.sorted_utility`) using binary search. The list is
+           expected to be sorted by utility values in ascending order. The search
+           considers a small tolerance (1e-5) to account for floating-point arithmetic
+           precision.
+
+           Parameters:
+           - bid: Bid
+               The bid for which to find the corresponding utility value index in the
+               sorted utilities list.
+
+           Returns:
+           - int: The index of the utility value in `self.sorted_utility` that matches
+             the utility of the given bid, considering the defined tolerance.
+
+           Raises:
+           - Exception: If the binary search fails to find a matching utility value
+             within the tolerance.
+           """
+
         tuil: float = float(self.profile.getUtility(bid))
         left, right = 0, len(self.sorted_utility) - 1
         while left <= right:
@@ -211,8 +283,29 @@ class GroupAgent(DefaultParty):
         raise Exception("Bin search fails")
 
     def intp_bids(self, bid_l: Bid, bid_r: Bid, ratio: float, strict=False):
+        """
+            Interpolates between two bids based on a given ratio, optionally using a strict method.
+
+            Parameters:
+            - bid_l: Bid
+                The left (starting) bid in the interpolation.
+            - bid_r: Bid
+                The right (ending) bid in the interpolation.
+            - ratio: float
+                The ratio at which to interpolate between the two bids.
+            - strict: bool, optional
+                If True, the interpolation is strict, meaning it directly calculates the
+                offset based on the sorted utility list. If False, it interpolates based on
+                randomly selected issues and their utility values, default is False.
+
+            Returns:
+            - Bid: A new bid interpolated between bid_l and bid_r according to the specified ratio
+                   and method (strict or not).
+
+            Detailed information can be found in the report.
+            """
         if strict:
-            # print("in")
+
             bid_raw: Dict[str, str] = {}
             idx_l = self.bin_search(bid_l)
             idx_r = self.bin_search(bid_r)
@@ -241,10 +334,9 @@ class GroupAgent(DefaultParty):
             self.logger.log(logging.INFO,
                             f"ratio : {ratio} | offset : {offset} | cur_utility[idx_l] : {cur_utility[idx_l]} | cur_utility[idx_r] : {cur_utility[idx_r]} | cur_utility[idx_l + offset] : {cur_utility[idx_l + offset]}")
             bid_raw[cur_issue] = cur_utility[idx_l + offset][0]
-        # print("bid")
-        # print(bid_raw)
-        bid = Bid(bid_raw)  # 他妈为什么doc都不给一个？？？ 我都不知道怎么创建Bid。
-        # print("Create bid")
+
+        bid = Bid(bid_raw)
+
         return bid
 
     def notifyChange(self, data: Inform):
@@ -262,26 +354,23 @@ class GroupAgent(DefaultParty):
             self.settings = cast(Settings, data)
             self.me = self.settings.getID()
 
-            # progress towards the deadline has to be tracked manually through the use of the Progress object
+
             self.progress = self.settings.getProgress()
 
             self.parameters = self.settings.getParameters()
             self.storage_dir = self.parameters.get("storage_dir")
 
-            # the profile contains the preferences of the agent over the domain
+
             profile_connection = ProfileConnectionFactory.create(
                 data.getProfile().getURI(), self.getReporter()
             )
             self.profile = profile_connection.getProfile()
             self.domain = self.profile.getDomain()
-            # compose a list of all possible bids
+
             self.all_bids = AllBidsList(self.domain)
-            # print(dir(self.profile))
-            # print(self.profile.getUtilities()['issueA'].getUtilities())
-            # print(self.profile.getWeights())
-            # print(self.domain)
+
             self.preprocessing()
-            # print(self.sorted_issue_utility)
+
             profile_connection.close()
 
         # ActionDone informs you of an action (an offer or an accept)
@@ -295,13 +384,13 @@ class GroupAgent(DefaultParty):
                 if self.other is None:
                     self.other = actor
                     self.other_name = str(actor).rsplit("_", 1)[0]
-                    self.attempt_load_data()  # 尝试加载历史数据并学习
+                    self.attempt_load_data()
                     self.learn_from_past_sessions()
 
-                self.opponent_action(action)  # 处理对手行动，更新对手模型
+                self.opponent_action(action)
 
         elif isinstance(data, YourTurn):
-            # 执行轮次动作，结合对手模型和历史数据进行决策
+
             self.my_turn()
 
         # Finished will be send if the negotiation has ended (through agreement or deadline)
@@ -352,7 +441,7 @@ class GroupAgent(DefaultParty):
         Returns:
             str: Agent description
         """
-        return "DreamTeam109 agent for the ANL 2022 competition"
+        return "Group86 agent for the ANL 2022 competition"
 
     def opponent_action(self, action):
         """Process an action that was received from the opponent.
@@ -383,12 +472,12 @@ class GroupAgent(DefaultParty):
     def my_turn(self):
 
         """
-        首先检查是否接受对手的最后一个报价。如果不接受，则尝试寻找一个新的报价。
-        如果已经接近谈判的截止时间（例如，进度大于或等于95%），它会使用预测的对手响应时间来决定是否等待再次行动，
-        以增加谈判成功的可能性。同时记录行动时间，以便用于计算平均行动时间，这可能对未来的决策有影响。
-        最后，它通过日志记录详细说明了决策过程。
-        """
-        opponent_bottom_line_estimate = self.infer_opponent_bottom_line()
+         First check whether to accept the opponent's last offer. If not accepted, try to find a new offer.
+         If it is close to the negotiation deadline (for example, progress is greater than or equal to 95%), it uses the predicted opponent response time to decide whether to wait to act again,
+         to increase the likelihood of successful negotiations. Action times are also recorded so that they can be used to calculate average action times, which may have implications for future decisions.
+         Finally, it details the decision-making process through logging.
+         """
+
         if hasattr(self, 'last_time') and self.last_time is not None:
             self.round_times.append(time.time() * 1000 - self.last_time)
             self.avg_time = sum(self.round_times[-3:]) / len(self.round_times[-3:])
@@ -403,17 +492,12 @@ class GroupAgent(DefaultParty):
             t = self.progress.get(time.time() * 1000)
 
             if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
-                # print("opponent_bottom_line_estimate: " + opponent_bottom_line_estimate)
-                # bid = self.generate_offer_based_on_estimate(opponent_bottom_line_estimate)
+
                 t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
                 self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
                 while t < 1 - t_o:
                     t = self.progress.get(time.time() * 1000)
-            # elif t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
-            #     t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
-            #     self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
-            #     while t < 1 - t_o:
-            #         t = self.progress.get(time.time() * 1000)
+
 
             action = Offer(self.me, bid)
             self.logger.log(logging.INFO, f"Offering bid: {bid}")
@@ -422,24 +506,22 @@ class GroupAgent(DefaultParty):
         self.send_action(action)
 
     def get_data_file_path(self) -> str:
-        """构建并返回存储对手数据的文件路径。"""
+
         filename = f"{self.other}.json"
         return os.path.join(self.storage_dir, filename)
 
     def attempt_load_data(self):
-        """尝试加载以前保存的对手数据。"""
+
         data_file_path = self.get_data_file_path()
         if os.path.exists(data_file_path):
             with open(data_file_path, 'r') as file:
                 self.data_dict = json.load(file)
-            # self.logger.log(logging.INFO, f"Loaded previous data for opponent: {self.other}")
+
         else:
-            # self.logger.log(logging.INFO, f"No previous data found for opponent: {self.other}")
+
             self.data_dict = {"sessions": []}
 
     def update_data_dict(self):
-        """在谈判结束时更新关于对手的数据字典。这个地方我现在用的都是dreamteam的数据，最后我们要换成我们自己的
-        """
         session_data = {
             "progressAtFinish": self.progress.get(time.time() * 1000),
             "utilityAtFinish": self.utility_at_finish,
@@ -449,19 +531,15 @@ class GroupAgent(DefaultParty):
             "forceAcceptAtRemainingTurns": self.force_accept_at_remaining_turns
         }
         self.data_dict["sessions"].append(session_data)
-        # self.logger.log(logging.INFO, "Session data updated.")
 
     def save_data(self):
         if not self.other:
-            # self.logger.log(logging.WARNING, "Opponent name not set; skipping data save.")
             return
         data_file_path = self.get_data_file_path()
         with open(data_file_path, 'w') as file:
             json.dump(self.data_dict, file, indent=4)
-        # self.logger.log(logging.INFO, f"Data saved for opponent: {self.other}")
 
     def learn_from_past_sessions(self):
-        """根据以前的会话学习并调整策略参数"""
         sessions = self.data_dict.get("sessions", [])
         if not sessions:
             return
@@ -470,48 +548,35 @@ class GroupAgent(DefaultParty):
         good_sessions = [s for s in sessions if s["utilityAtFinish"] >= 0.5]
 
         self.adjust_strategy_based_on_history(failed_sessions, good_sessions)
-        # self.logger.log(logging.INFO, "Strategy adjusted based on past sessions.")
+
 
     def adjust_strategy_based_on_history(self, failed_sessions: List[Dict], good_sessions: List[Dict]):
-        """根据历史成功和失败会话调整策略参数，这个地方可以加机器学习，我现在是用gpt整了点东西"""
         num_failed = len(failed_sessions)
         num_good = len(good_sessions)
         total_sessions = num_failed + num_good
 
-        # 调整接受报价的策略，基于历史成功率
         if total_sessions > 0:
             success_rate = num_good / total_sessions
-            self.min_util = 0.75 - 0.25 * success_rate  # 假设基线最小效用值为0.75，随着成功率提高，可以适当降低这一阈值
+            self.min_util = 0.75 - 0.25 * success_rate
 
-        # 根据历史记录调整顶级报价的选择范围
-        # 如果历史记录显示较多失败的谈判，可能意味着需要在顶级报价中选择更具吸引力的报价
-        self.top_bids_percentage = 1 / (50 - min(20, 5 * num_failed))  # 失败次数越多，选择范围越窄
 
-        # 调整基于时间压力的策略
-        # 如果在历史谈判中频繁失败，可能需要更早地开始考虑接受报价或提出更有吸引力的报价
+        self.top_bids_percentage = 1 / (50 - min(20, 5 * num_failed))
+
         if num_failed > num_good:
-            self.force_accept_at_remaining_turns *= 1.1  # 增加接受报价的倾向
+            self.force_accept_at_remaining_turns *= 1.1
             self.force_accept_at_remaining_turns_light = min(1.5,
-                                                             self.force_accept_at_remaining_turns_light + 0.1)  # 轻微增加接受报价的倾向
+                                                             self.force_accept_at_remaining_turns_light + 0.1)
         else:
-            self.force_accept_at_remaining_turns *= 0.9  # 减少接受报价的倾向
+            self.force_accept_at_remaining_turns *= 0.9
             self.force_accept_at_remaining_turns_light = max(1,
-                                                             self.force_accept_at_remaining_turns_light - 0.1)  # 轻微减少接受报价的倾向
+                                                             self.force_accept_at_remaining_turns_light - 0.1)
 
-        # 根据好的会话调整，增加冒险性
-        # 如果历史记录显示较多成功的谈判，可以尝试更加冒险的策略
         if num_good > num_failed:
-            self.min_util -= 0.05 * (num_good - num_failed) / total_sessions  # 成功越多，可以适当降低最小效用值阈值，尝试更冒险的报价
+            self.min_util -= 0.05 * (num_good - num_failed) / total_sessions
 
-        # 确保所有参数都在合理范围内
-        self.min_util = max(0.5, min(self.min_util, 0.95))  # 保持最小效用值在0.5到0.95之间
-        self.force_accept_at_remaining_turns = max(0, min(self.force_accept_at_remaining_turns, 2))  # 保持接受报价的倾向在合理范围
-        self.force_accept_at_remaining_turns_light = max(0, min(self.force_accept_at_remaining_turns_light, 2))  # 同上
-
-        # self.logger.log(logging.INFO,
-        #                f"Adjusted strategies: min_util={self.min_util}, top_bids_percentage={self.top_bids_percentage}, "
-        #                f"force_accept_at_remaining_turns={self.force_accept_at_remaining_turns}, "
-        #                f"force_accept_at_remaining_turns_light={self.force_accept_at_remaining_turns_light}")
+        self.min_util = max(0.5, min(self.min_util, 0.95))
+        self.force_accept_at_remaining_turns = max(0, min(self.force_accept_at_remaining_turns, 2))
+        self.force_accept_at_remaining_turns_light = max(0, min(self.force_accept_at_remaining_turns_light, 2))
 
     def did_fail(self, session: SessionData):
         return session["utilityAtFinish"] == 0
@@ -521,87 +586,65 @@ class GroupAgent(DefaultParty):
 
     def accept_condition(self, bid: Bid) -> bool:
         """
-        根据谈判的平均时间和剩余时间动态调整接受报价的条件
-        报价效用高于最小效用阈值或在接近截止时间时报价好于平均水平的报价都可以被接受，能够适应多变的谈判情境。
-        考虑了历史上的报价效用分布来判断当前报价是否具有竞争力。
-        """
+         Dynamically adjust the conditions for accepting an offer based on average time and remaining time for negotiations
+         Offers whose utility is higher than the minimum utility threshold or offers that are better than the average near the deadline can be accepted and can adapt to changing negotiation situations.
+         The historical offer utility distribution is considered to determine whether the current offer is competitive.
+         """
         if bid is None:
             return False
 
-        # 获取谈判的当前进度
         progress = self.progress.get(time.time() * 1000)
         if progress < 0.95: return False
 
-        # 动态调整接受报价的阈值，考虑历史数据和谈判平均时间
         dynamic_threshold = self.calculate_dynamic_threshold(progress)
 
-        # 采用一个更加灵活的策略，考虑报价的效用、谈判的进展以及对手的可能行为
         is_high_utility = self.profile.getUtility(bid) >= self.min_util
         is_close_to_deadline = progress >= dynamic_threshold
         is_better_than_average_offers = self.is_bid_better_than_average(bid, progress)
 
-        # 如果报价的效用高于最小效用阈值，或者谈判接近截止且报价好于平均报价，则接受
         return is_high_utility or is_close_to_deadline and is_better_than_average_offers
 
     def calculate_dynamic_threshold(self, progress):
-        """根据谈判进展动态计算阈值"""
-        # 这里的1-1000和1-5000是乱写的
+
         threshold = 1 - 1000 * self.force_accept_at_remaining_turns * self.avg_time / self.progress.getDuration()
         light_threshold = 1 - 5000 * self.force_accept_at_remaining_turns_light * self.avg_time / self.progress.getDuration()
-        return max(0.95, min(threshold, light_threshold))  # 确保阈值在一个合理的范围内
+        return max(0.95, min(threshold, light_threshold))
 
     def is_bid_better_than_average(self, bid, progress):
-        """判断当前报价是否好于过去接收的平均报价"""
         if not hasattr(self, 'bids_with_utilities') or not self.bids_with_utilities:
-            return False  # 如果没有之前的报价作为参考，直接返回False
+            return False
 
-        # 根据进度动态选择比较的报价范围
         if progress < 0.5:
-            compare_index = len(self.bids_with_utilities) // 2  # 前半段谈判比较中等报价
+            compare_index = len(self.bids_with_utilities) // 2
         else:
-            compare_index = len(self.bids_with_utilities) // 5  # 谈判后期比较顶部20%的报价
+            compare_index = len(self.bids_with_utilities) // 5
 
         average_utility = self.bids_with_utilities[compare_index][1]
         return self.profile.getUtility(bid) >= average_utility
 
     """
-        一次性计算效用：在需要时计算并排序所有报价的效用值，避免重复计算。
-        谈判进展动态调整：根据谈判的进展，选择不同的策略。在谈判的早期阶段，采用随机探索以发现潜在的高效用报价；在谈判的后期，则优先考虑效用值较高的报价，以提高成功的可能性。
-        考虑对手最佳报价：如果接近谈判末端且存在对手的最佳报价，直接考虑使用该报价，以提高达成协议的机会。
-        """
+         Calculate utility in one go: Calculate and sort utility values for all quotes when needed, avoiding double calculations.
+         Dynamic adjustment of negotiation progress: Choose different strategies according to the progress of negotiation. In the early stages of negotiation, random exploration is used to discover potential high-utility offers; in the later stages of negotiation, offers with higher utility values are given priority to increase the probability of success.
+         Consider your opponent's best offer: If you are nearing the end of a negotiation and there is an opponent's best offer, consider using that offer directly to increase your chances of reaching an agreement.
+    """
 
     def find_bid(self) -> Bid:
-        # self.logger.log(logging.INFO, "Finding bid...")
-
-        # 初始化或更新所有可能报价的效用列表
         if self.bids_with_utilities is None or len(self.bids_with_utilities) == 0:
-            # self.logger.log(logging.INFO, "Calculating bids with utilities...")
-            startTime = time.time()
-            self.calculate_bids_with_utilities()
-            endTime = time.time()
-            # self.logger.log(logging.INFO, f"Calculated bids with utilities in {endTime - startTime} seconds.")
 
-        # 谈判进展阶段判断
+            self.calculate_bids_with_utilities()
+
         progress = self.progress.get(time.time() * 1000)
 
-        # 如果接近谈判末端并有对手的最佳报价，直接考虑使用
-        # if progress > 0.95 and hasattr(self, 'opponent_best_bid') and self.opponent_best_bid is not None:
-        # return self.opponent_best_bid
-
-        # 根据谈判进度选择策略
+        #Choose bidding strategy according to progress
         if progress < 0.1:
-            # print("Progress 1")
-            # 谈判前半段随机探索
+            #Random explore for the first half
             return self.random_explore()
         elif progress <= 1:
-            # print("Progress 2")
+
             try:
                 return self.intp_method()
             except Exception as e:
                 quit()
-        else:
-            # 谈判后半段选择效用值较高的报价
-            return self.choose_high_utility_bid(progress)
 
     def find_bid_match_centres(self, bids: List[Bid], labels: np.ndarray, centres: np.ndarray):
         best_bids = [None, None]
@@ -611,11 +654,6 @@ class GroupAgent(DefaultParty):
             cur_label = labels[idx]
             if best_bids[cur_label] is None or abs(cur_utility - centres[cur_label]) < dsts[cur_label]:
                 best_bids[cur_label] = bid
-                # print("Before")
-                # print(cur_utility, centres[cur_label])
-                # print(type(cur_utility), type(centres[cur_label]))
-                # print(cur_utility - centres[cur_label])
-                # print("Good")
                 dsts[cur_label] = abs(cur_utility - centres[cur_label])
         return best_bids
 
@@ -627,23 +665,32 @@ class GroupAgent(DefaultParty):
         return ratio
 
     def intp_method(self):
-        # print("INTP Method is used.")
-        # labels, centers = self.k_means(self.all_bids_list)
-        # bid_0, bid_1 = self.find_bid_match_centres(self.all_bids_list, labels, centers)
+        """
+        Interpolates a new bid between two representative bids identified by the DBSCAN method.
+
+        This method first identifies two representative bids using the `dbscan_method`. It then
+        determines which of these bids has the lower and higher utility, respectively, assigning
+        them as left (bid_l) and right (bid_r) bounds for interpolation. The interpolation ratio
+        is determined by `get_ratio()`, and the method interpolates between bid_l and bid_r using
+        the `intp_bids` method with a strict interpolation strategy.
+
+        Returns:
+            The interpolated bid based on the current ratio and the utilities of the two
+            representative bids.
+        """
         bid_0, bid_1 = self.dbscan_method()
         bid_l = bid_0 if self.profile.getUtility(bid_0) < self.profile.getUtility(bid_1) else bid_1
         bid_r = bid_0 if self.profile.getUtility(bid_0) >= self.profile.getUtility(bid_1) else bid_1
-        # self.logger.log(logging.INFO, str(bid_l) + " " + str(self.profile.getUtility(bid_l)))
-        # self.logger.log(logging.INFO, str(bid_r) + " " + str(self.profile.getUtility(bid_r)))
+
         cur_ratio = self.get_ratio()
         self.logger.log(logging.INFO, f"[cur_ratio] cur_ratio : {cur_ratio}")
-        # print("Ratio")
+
         intp = self.intp_bids(bid_l, bid_r, cur_ratio, strict=True)
         self.logger.log(logging.INFO, "INTP Result : " + str(intp) + " " + str(self.profile.getUtility(intp)))
         return intp
 
     def calculate_bids_with_utilities(self):
-        """计算所有可能报价的效用值，并排序。"""
+
         self.bids_with_utilities = []
         for bid in self.all_bids:
             utility = self.profile.getUtility(bid)
@@ -716,3 +763,6 @@ class GroupAgent(DefaultParty):
         adjusted_eps = max(0.01, min(0.2, adjusted_eps))
 
         return adjusted_alpha, adjusted_eps
+
+    def regression_opponent_time(self, param):
+        pass
