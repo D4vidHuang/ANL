@@ -55,7 +55,7 @@ class DataDict(TypedDict):
     sessions: list[SessionData]
 
 
-class GroupAgent(DefaultParty):
+class Group4Agent(DefaultParty):
 
     def __init__(self):
         super().__init__()
@@ -441,7 +441,7 @@ class GroupAgent(DefaultParty):
         Returns:
             str: Agent description
         """
-        return "Group86 agent for the ANL 2022 competition"
+        return "Group 4 AlphaBuilt Agent from CSE3210 (2023-2024)" 
 
     def opponent_action(self, action):
         """Process an action that was received from the opponent.
@@ -490,15 +490,6 @@ class GroupAgent(DefaultParty):
             bid = self.find_bid()
             self.all_bids_list.append(bid)
             t = self.progress.get(time.time() * 1000)
-
-            if t >= 0.95 and hasattr(self, 'opponent_bid_times') and len(self.opponent_bid_times) > 0:
-
-                t_o = self.regression_opponent_time(self.opponent_bid_times[-10:])
-                self.logger.log(logging.INFO, f"Current time: {t}, Predicted opponent response time: {t_o}")
-                while t < 1 - t_o:
-                    t = self.progress.get(time.time() * 1000)
-
-
             action = Offer(self.me, bid)
             self.logger.log(logging.INFO, f"Offering bid: {bid}")
 
@@ -710,59 +701,3 @@ class GroupAgent(DefaultParty):
             return closest_bid[0]
 
         return self.bids_with_utilities[index][0]
-
-    def score_bid(self, bid: Bid, alpha: float = 0.95, eps: float = 0.1) -> float:
-        """Calculate heuristic score for a bid with dynamic adjustments and stochastic elements.
-
-        Args:
-            bid (Bid): Bid to score.
-            alpha (float, optional): Base trade-off factor between self-interested and altruistic behavior.
-            eps (float, optional): Base time pressure factor.
-
-        Returns:
-            float: Adjusted score of the bid.
-        """
-        if bid is None:
-            return 0
-
-        progress = self.progress.get(time.time() * 1000)
-
-        # Dynamic adjustment based on negotiation progress
-        dynamic_alpha, dynamic_eps = self.dynamic_adjustments(alpha, eps, progress)
-
-        # Calculate time pressure
-        time_pressure = 1.0 - progress ** (1 / dynamic_eps)
-        utility = float(self.profile.getUtility(bid))
-
-        # Initial score based on our utility
-        score = dynamic_alpha * time_pressure * utility
-
-        # Adjust score based on opponent model, if available
-        if self.opponent_model is not None:
-            opponent_utility = self.opponent_model.get_predicted_utility(bid)
-            opponent_score = (1.0 - dynamic_alpha * time_pressure) * opponent_utility
-            score += opponent_score
-
-        return score
-
-    def dynamic_adjustments(self, alpha, eps, progress):
-        """Dynamically adjust alpha and eps based on negotiation progress and stochastic elements."""
-        # Introduce randomness in adjustment
-        stochastic_factor = random.uniform(-0.05, 0.05)
-
-        # Adjust alpha based on negotiation progress and add stochastic factor
-        adjusted_alpha = alpha + (0.05 if progress > 0.8 else -0.05) + stochastic_factor
-
-        # Ensure adjusted alpha remains within reasonable bounds
-        adjusted_alpha = max(0.8, min(1.0, adjusted_alpha))
-
-        # Adjust eps to increase time pressure as negotiation progresses
-        adjusted_eps = eps - (progress * 0.05) + stochastic_factor
-
-        # Ensure adjusted eps remains within reasonable bounds
-        adjusted_eps = max(0.01, min(0.2, adjusted_eps))
-
-        return adjusted_alpha, adjusted_eps
-
-    def regression_opponent_time(self, param):
-        pass

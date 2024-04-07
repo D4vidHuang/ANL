@@ -1,0 +1,52 @@
+{
+    "sessions": [
+        {
+            "progressAtFinish": 0.95220361328125,
+            "utilityAtFinish": 0.29541737,
+            "didAccept": false,
+            "isGood": false,
+            "topBidsPercentage": 0.0033333333333333335,
+            "forceAcceptAtRemainingTurns": 1
+        },
+        {
+            "progressAtFinish": 0.0056382568359375,
+            "utilityAtFinish": 0.9323815209,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.022222222222222223,
+            "forceAcceptAtRemainingTurns": 1.1
+        },
+        {
+            "progressAtFinish": 0.004696826171875,
+            "utilityAtFinish": 0.9113702555,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.022222222222222223,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.015779443359375,
+            "utilityAtFinish": 0.9434066457,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.022222222222222223,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.938931689453125,
+            "utilityAtFinish": 0.5566990027,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.022222222222222223,
+            "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.953900341796875,
+            "utilityAtFinish": 0.573947778,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.022222222222222223,
+            "forceAcceptAtRemainingTurns": 0.9
+        }
+    ]
+}

@@ -22,8 +22,8 @@ settings = {
             "parameters": {"storage_dir": "agent_storage/Test1"},
         },
         {
-            "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
-            "parameters": {"storage_dir": "agent_storage/DreamTeam109Agent"},
+            "class": "agents.group4_agent.Group4Agent.Group4Agent",
+            "parameters": {"storage_dir": "agent_storage/Group4Agent"},
         },
     ],
     "profiles": ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],

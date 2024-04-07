@@ -23,6 +23,14 @@
             "isGood": true,
             "topBidsPercentage": 0.02,
             "forceAcceptAtRemainingTurns": 0.9
+        },
+        {
+            "progressAtFinish": 0.9514937744140625,
+            "utilityAtFinish": 0.5647933535,
+            "didAccept": false,
+            "isGood": true,
+            "topBidsPercentage": 0.02,
+            "forceAcceptAtRemainingTurns": 0.9
         }
     ]
 }
